@@ -1,0 +1,39 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $TABLE
+ * -----------------------------------------------------------------------------
+ */
+
+table {
+    border-collapse: collapse;
+}
+
+tfoot,
+thead {
+    background-color: $color-grey;
+    color: $color-white;
+    font-weight: $font-weight-bold;
+}
+
+th {
+    color: $color-white;
+    padding: $spacing-small $spacing-default;
+}
+
+tbody {
+    tr {
+        &:nth-child(even) {
+            background-color: lighten($color-grey, 60%);
+        }
+
+        &:nth-child(odd) {
+            background-color: lighten($color-grey, 62%);
+        }
+    }
+}
+
+td,
+th {
+    text-align: left;
+    padding: $spacing-small;
+}
