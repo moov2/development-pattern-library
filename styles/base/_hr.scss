@@ -1,0 +1,38 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $HR
+ * -----------------------------------------------------------------------------
+ */
+
+hr {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	background: none;
+	border-color: $color-grey;
+	border-top-style: solid;
+	border-top-width: 1px;
+
+	@include rem(margin, $spacing-huge 0);
+}
+
+.hr--dashed {
+	border-style: dashed;
+}
+
+.hr--double {
+	height: 3px;
+	border-style: double;
+	border-top-width: 4px;
+}
+
+.hr--dotted {
+	border-style: dotted;
+}
+
+.hr--gradient {
+	border: 0;
+	height: 1px;
+
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0))
+}
