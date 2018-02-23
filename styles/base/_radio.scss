@@ -1,0 +1,30 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $RADIO
+ * -----------------------------------------------------------------------------
+ */
+
+input[type="radio"] {
+    display: none;
+
+    & + label {
+        margin-bottom: 0;
+        @include rem(padding, $spacing-small);
+        
+        @include bp-min-width($bp-mobile) {
+            @include rem(padding-bottom, $spacing-small);
+            @include rem(padding-left, $spacing-default);
+            @include rem(padding-right, $spacing-default);
+            @include rem(padding-top, $spacing-small);
+        }
+
+        cursor: pointer;
+    }
+
+    &:checked + label {
+        @include rem(border-radius, $spacing-tiny);
+
+        background-color: $color-grey;
+        color: $color-white;
+    }
+}
