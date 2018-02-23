@@ -1,0 +1,34 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $EMBED
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * Container element for youtube & vimeo embeds. Uses a technique described
+ * a blog post (linked below) to make embedding video responsive.
+ *
+ * http://avexdesigns.com/responsive-youtube-embed/
+ */
+
+.embed {
+    display: block;
+}
+
+    .embed__media {
+        height: 0;
+        margin-top: 0;
+        max-width: 100%;
+        padding-bottom: 56.25%;
+        position: relative;
+
+        & iframe,
+        & object,
+        & embed {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    }
