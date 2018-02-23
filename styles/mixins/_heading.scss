@@ -1,0 +1,87 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $HEADING
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * Helpful mixins for headings.
+ */
+
+@mixin heading-one() {
+    margin-top: 0;
+
+    font-family: $font-family-heading;
+    font-size: $font-size-heading-mobile;
+    font-weight: $font-weight-bold;
+    line-height: 1.2;
+    
+    @include bp-min-width($bp-tablet) {
+        font-size: $font-size-heading;
+    }
+}
+
+@mixin heading-two() { 
+    margin-top: 0;
+
+    font-family: $font-family-heading;
+    font-size: $font-size-heading-2-mobile;
+    font-weight: $font-weight-bold;
+    line-height: 1.2;
+
+    @include bp-min-width($bp-tablet) {
+        font-size: $font-size-heading-2;
+    }
+}
+
+@mixin heading-three() { 
+    margin-top: 0;
+
+    font-family: $font-family-heading;
+    font-size: $font-size-heading-3-mobile;
+    font-weight: $font-weight-bold;
+    line-height: 1.2;
+
+    @include bp-min-width($bp-tablet) {
+        font-size: $font-size-heading-3;
+    }
+}
+
+@mixin heading-four() { 
+    margin-top: 0;
+
+    font-family: $font-family-heading;
+    font-size: $font-size-heading-4-mobile;
+    font-weight: $font-weight-bold;
+    line-height: 1.2;
+
+    @include bp-min-width($bp-tablet) {
+        font-size: $font-size-heading-4;
+    }
+}
+
+@mixin heading-five() { 
+    margin-top: 0;
+
+    font-family: $font-family-heading;
+    font-size: $font-size-heading-5-mobile;
+    font-weight: $font-weight-bold;
+    line-height: 1.2;
+
+    @include bp-min-width($bp-tablet) {
+        font-size: $font-size-heading-5;
+    }
+}
+
+@mixin heading-six() { 
+    margin-top: 0;
+
+    font-family: $font-family-heading;
+    font-size: $font-size-heading-6-mobile;
+    font-weight: $font-weight-bold;
+    line-height: 1.2;
+
+    @include bp-min-width($bp-tablet) {
+        font-size: $font-size-heading-6;
+    }
+}
