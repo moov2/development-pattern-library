@@ -1,0 +1,33 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $PARAGRAPH
+ * -----------------------------------------------------------------------------
+ */
+
+p {
+	@include rem(margin-bottom, $spacing-large);
+
+	font-weight: $font-weight-default;
+	line-height: 1.3;
+
+	box-sizing: border-box;
+	display: block;
+	margin-top: 0;
+	width: 100%;
+
+	@include bp-min-width($width-content) {
+		padding-left: 0;
+		padding-right: 0;
+		
+		line-height: 1.4;
+	}
+
+	& + h2,
+	& + h3 {
+		@include rem(padding-top, $spacing-default);
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
