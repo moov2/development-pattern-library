@@ -1,0 +1,25 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $BLOCKQUOTE
+ * -----------------------------------------------------------------------------
+ */
+
+blockquote {
+    padding-bottom: $spacing-small;
+    padding-left: $spacing-default;
+    padding-top: $spacing-small;
+    margin-left: 0;
+    margin-right: 0;
+
+    border-left: 4px solid $color-grey;
+    font-style: italic;
+
+    @include bp-min-width($bp-tablet) {
+        margin-left: $spacing-large;
+        margin-right: $spacing-large;
+    }
+}
+
+.blockquote--large {
+    font-size: $font-size-large;
+}
