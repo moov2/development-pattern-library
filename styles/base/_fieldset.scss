@@ -1,0 +1,40 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $FIELDSET
+ * -----------------------------------------------------------------------------
+ */
+
+fieldset {
+	@include rem(margin-bottom, $spacing-large);
+	margin-left: 0;
+	@include rem(padding-bottom, $spacing-default * 1.3);
+	@include rem(padding-left, $spacing-small);
+	@include rem(padding-right, $spacing-small);
+	@include rem(padding-top, $spacing-default);
+
+	display: block;
+
+	border: 1px solid $color-grey;
+
+	@include bp-min-width($bp-desktop) {
+		
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	legend {
+		@include rem(padding-left, $spacing-small);
+		@include rem(padding-right, $spacing-small);
+
+		font-size: $font-size-small;
+	}
+	
+	ul {
+		li {
+			@include rem(margin-left, $spacing-small);
+			@include rem(margin-right, $spacing-small);
+		}
+	}
+}
