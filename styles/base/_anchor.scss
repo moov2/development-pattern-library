@@ -1,0 +1,210 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $ANCHOR
+ * -----------------------------------------------------------------------------
+ */
+
+a {
+    @include active-states();
+
+    color: $color-brand-primary;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.link--cta {
+    &-large {
+        @include rem(padding-bottom, $spacing-default);
+        @include rem(padding-left, $spacing-large);
+        @include rem(padding-right, $spacing-large);
+        @include rem(padding-top, $spacing-default);
+        
+        font-size: $font-size-heading-3-mobile;
+    }
+}
+
+.link--plain {
+    border-bottom: 0;
+
+    color: inherit;
+    font-weight: $font-weight-default;
+    text-decoration: none;
+}
+
+.link--admin {
+    bottom: 0;
+    position: fixed;
+    @include rem(padding-bottom, $spacing-default);
+    @include rem(padding-left, $spacing-large);
+    @include rem(padding-right, $spacing-large);
+    @include rem(padding-top, $spacing-default);
+    right: 0;
+    z-index: $z-index-front;
+
+    background-color: $color-brand-primary;
+    border-bottom: 0;
+    color: $color-white;
+    text-decoration: none;
+
+    &:hover {
+        background-color: lighten($color-brand-primary, 30%);
+    }
+}
+
+.link--shrink {
+    &-center, &-ltr, &-rtl {
+        position: relative;
+
+        text-decoration: none;
+
+        &:before {
+            bottom: 0;
+            content: "";
+            height: 1px;
+            position: absolute;
+            width: 100%;
+
+            background-color: $color-brand-primary;
+            transition: width 0.3s ease-in-out;
+        }
+
+        &:hover {
+            &:before {
+                width: 0;
+            }
+        }
+    }
+
+    &-center {
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &-ltr {
+        &:before {
+            right: 0;
+        }
+    }
+
+    &-rtl {
+        &:before {
+            left: 0;
+        }
+    }
+}
+
+.link--slide {
+    &-bottom, &-center, &-top {
+        position: relative;
+
+        text-decoration: none;
+
+        &:before {
+            content: "";
+            height: 1px;
+            left: 0;
+            position: absolute;
+            width: 100%;
+
+            background-color: $color-brand-primary;
+            opacity: 0;
+            transition: opacity 0.3s, transform 0.3s;
+            
+        }
+
+        &:hover {
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+
+    &-bottom {
+        &:before {
+            top: 100%;
+            transform: translateY(10px);
+        }
+
+        &:hover {
+            &:before {
+                transform: translateY(0px);
+            }
+        }
+    }
+
+    &-center {
+        &:before {
+            top: 100%;
+            transform: translateY(0px);
+        }
+
+        &:hover {
+            &:before {
+                transform: translateY(-10px);
+            }
+        }
+    }
+
+    &-top {
+
+        &:before {
+            bottom: 100%;
+            transform: translateY(10px);
+        }
+
+        &:hover {
+            &:before {
+                transform: translateY(0);
+            }
+        }
+    }
+}
+
+.link--grow {
+    &-center, &-ltr, &-rtl {
+        position: relative;
+
+        text-decoration: none;
+
+        &:before {
+            bottom: 0;
+            content: "";
+            height: 1px;
+            position: absolute;
+            width: 0;
+
+            background-color: $color-brand-primary;
+            transition: width 0.3s ease-in-out;
+        }
+
+        &:hover {
+            &:before {
+                width: 100%;
+            }
+        }
+    }
+
+    &-center {
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &-ltr {
+        &:before {
+            left: 0;
+        }
+    }
+
+    &-rtl {
+        &:before {
+            right: 0;
+        }
+    }
+}
