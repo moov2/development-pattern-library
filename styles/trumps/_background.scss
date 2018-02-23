@@ -1,0 +1,11 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $BACKGROUND
+ * -----------------------------------------------------------------------------
+ */
+
+.bg-color {
+    &--black { background-color: $color-black; }
+    &--grey { background-color: $color-grey; }
+    &--white { background-color: $color-white; }
+}
