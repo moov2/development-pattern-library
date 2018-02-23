@@ -1,0 +1,29 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $HEADING
+ * -----------------------------------------------------------------------------
+ */
+
+h1 {
+    @include heading-one();
+}
+
+h2 { 
+    @include heading-two();
+}
+
+h3 { 
+    @include heading-three();
+}
+
+h4 { 
+    @include heading-four();
+}
+
+h5 { 
+    @include heading-five();
+}
+
+h6 { 
+    @include heading-six();
+}
