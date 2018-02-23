@@ -1,0 +1,1 @@
+These text trump classes are used to mimic heading styles. This is so that the markup is kept semantically correct. They are not a replacement for <a href="/components/detail/heading">actual headings</a>.

@@ -1,0 +1,62 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $TEXT
+ * -----------------------------------------------------------------------------
+ */
+
+.text {
+    &-align {
+        &--left { text-align: left; }
+        &--center { text-align: center; }
+        &--right { text-align: right; }
+    }
+
+    &-color {
+        &--black { color: $color-black; }
+        &--grey { color: $color-grey; }
+        &--grey-light { color: $color-grey-light; }
+        &--white { color: $color-white; }
+    }
+
+    &-decoration {
+        &--line-through { text-decoration: line-through; }
+        &--overline { text-decoration: overline; }
+        &--underline { text-decoration: underline; }
+    }
+
+    &-font {
+        &--default { font-family: $font-family-default; }
+        &--heading { font-family: $font-family-heading; }
+    }
+
+    &-heading {
+        &--1 { @include heading-one(); }
+        &--2 { @include heading-two(); }
+        &--3 { @include heading-three(); }
+        &--4 { @include heading-four(); }
+        &--5 { @include heading-five(); }
+        &--6 { @include heading-six(); }
+    }
+
+    &-size {
+        &--small { @include rem(font-size, $font-size-small); }
+        &--default { @include rem(font-size, $font-size-default); }
+        &--large { @include rem(font-size, $font-size-large); }
+    }
+    
+    &-style {
+        &--italic { font-style: italic; }
+        &--normal { font-style: normal; }
+    }
+
+    &-transform {
+        &--capitalize { text-transform: capitalize; }
+        &--lowercase { text-transform: lowercase; }
+        &--uppercase { text-transform: uppercase; }
+    }
+
+    &-weight {
+        &--regular { font-weight: 400; }
+        &--bold { font-weight: 700; }
+    }
+}
