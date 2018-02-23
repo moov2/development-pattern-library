@@ -1,0 +1,57 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $INPUT
+ * -----------------------------------------------------------------------------
+ */
+
+input {
+    box-sizing: border-box;
+	display: block;
+	@include rem(margin-bottom, $spacing-large);
+	@include rem(padding-bottom, $spacing-default);
+	@include rem(padding-left, $spacing-default);
+	@include rem(padding-right, $spacing-default);
+	@include rem(padding-top, $spacing-default * .85);
+	outline: none;
+	width: 100%;
+	
+	color: $color-black;
+	background-color: lighten($color-grey-light, 40%);
+	border-color: $color-grey-light;
+    border-style: solid;
+	@include rem(border-width, $input-border-width);
+	font-family: $font-family-default;
+    font-size: $font-size-default;
+	font-weight: $font-weight-default;
+
+	&:focus {
+		border-color: $color-black;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+input[type=submit] {
+	display: inline-block;
+	max-width: 200px;
+	@include rem(padding-bottom, $spacing-default * 1.05);
+	@include rem(padding-top, $spacing-default * .95);
+	width: auto;
+
+	background-color: $color-brand-primary;
+	border: 0;
+	color: $color-white;
+	cursor: pointer;
+	font-family: $font-family-heading;
+	line-height: 1;
+
+	&:hover {
+		background-color: lighten($color-brand-primary, 10%);
+	}
+}
+
+.input--rounded {
+	@include rem(border-radius, $border-radius);
+}
