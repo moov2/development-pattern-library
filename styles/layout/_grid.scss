@@ -1,0 +1,96 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $GRID
+ * -----------------------------------------------------------------------------
+ */
+
+.grid,
+.grid--inline {
+    display: grid;
+    width: 100%;
+}
+
+.grid--inline {
+    display: inline-grid;
+}
+
+@for $i from 1 through 12 {
+    .grid-template--cols-#{$i} {
+        grid-template-columns: repeat(0 + $i, 1fr);
+    }
+}
+
+@for $i from 1 through 12 {
+    .grid-template--rows-#{$i} {
+        grid-template-rows: repeat(0 + $i, 1fr);
+    }
+}
+
+    .grid__item {
+        vertical-align: top;
+    }
+
+    @for $i from 1 through 12 {
+        .grid-item--start-col-#{$i} {
+            grid-column-start: 0 + $i;
+        }
+    }
+    
+    @for $i from 1 through 13 {
+        .grid-item--end-col-#{$i} {
+            grid-column-end: 0 + $i;
+        }
+    }
+    
+    @for $i from 1 through 12 {
+        .grid-item--start-row-#{$i} {
+            grid-row-start: 0 + $i;
+        }
+    }
+    
+    @for $i from 1 through 12 {
+        .grid-item--end-row-#{$i} {
+            grid-row-end: 0 + $i;
+        }
+    }  
+
+    @for $i from 1 through 11 {
+        .grid-item--offset-#{$i} {
+            grid-column-start: 1 + $i;
+        }
+    }
+
+    @for $i from 1 through 12 {
+        .grid-item--width-#{$i} {
+            grid-column: span 0 + $i;
+        }
+    }
+
+/* Pattern library example */ 
+.grid--example {
+    grid-gap: $spacing-default;
+    @include rem(margin-bottom, $spacing-default);
+
+    &:last-child { margin-bottom: 0; }
+    
+    & .grid__item {
+        @include rem(padding, $spacing-default);  
+
+        background-color: lighten($color-grey-light, 30%);
+        border-radius: 3px;
+        font-size: $font-size-small;
+        color: $color-black;
+    }
+}
+
+.grid--triple { grid-template-columns: 1fr 1fr 1fr; }
+
+.grid-gap {
+    &--none { grid-gap: 0; }
+    &--tiny { grid-gap: $spacing-tiny; }
+    &--small { grid-gap: $spacing-small; }
+    &--default { grid-gap: $spacing-default; }
+    &--large { grid-gap: $spacing-large; }
+    &--huge { grid-gap: $spacing-huge; }
+}
+  
