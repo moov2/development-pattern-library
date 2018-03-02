@@ -41,6 +41,17 @@
 
 @import "components/embed";
 @import "components/list";
+@import "components/summary";
+
+@import "layout/container";
+@import "layout/grid";
 
 @import "trumps/background";
+@import "trumps/margin";
+@import "trumps/display";
+@import "trumps/flex";
+@import "trumps/padding";
+@import "trumps/position";
 @import "trumps/text";
+@import "trumps/visibility";
+@import "trumps/width";
