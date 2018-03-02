@@ -28,6 +28,12 @@ $input-border-width: 1px;
 * BREAKPOINTS
 */
 
+$bp: (
+    "small": 320px,
+    "medium": 768px,
+    "large":  1024px
+);
+
 $bp-mobile-small: 320px;
 $bp-mobile: 375px;
 $bp-mobile-large: 425px;
@@ -46,7 +52,7 @@ $btn-tab-width: 140px;
 * COLOURS
 */
 
-$color-brand-primary: #bd2021;
+$color-brand-primary: #149bdc;
 $color-brand-secondary: #57527d;
 
 $color-black: #000000;
@@ -69,7 +75,6 @@ $color-instagram: #E4405F;
 $color-twitter: #1DA1F2;
 $color-youtube: #CD201F;
 
-
 /**
 * FONT
 */
@@ -91,7 +96,7 @@ $font-size-heading: 4.8rem;
 $font-size-heading-mobile: 2.8rem;
 
 $font-size-heading-2: 3.6rem;
-$font-size-heading-2-mobile: 2.4rem;
+$font-size-heading-2-mobile: 2.7rem;
 
 $font-size-heading-3: 2.4rem;
 $font-size-heading-3-mobile: 2rem;
