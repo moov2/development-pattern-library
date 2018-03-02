@@ -1,0 +1,1 @@
+Aspect ratio is important here. For larger images we tend to lean towards a 16:9 aspect ratio, but for smaller images use a 4:3 ratio to give the image more height.
