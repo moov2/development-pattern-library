@@ -1,5 +1,5 @@
 {
-  "name": "moov2-pattern-library",
+  "name": "development-pattern-library",
   "version": "0.1.0",
   "dependencies": {
     "@frctl/fractal": "^1.1.7",
@@ -14,9 +14,11 @@
     "main": "fractal.js"
   },
   "scripts": {
-    "build-css": "node-sass --include-path scss styles/styles.scss   public/css/styles.css",
-    "clean-css": "cleancss -o public/css/styles.min.css   public/css/styles.css",
+    "build-css": "node-sass --include-path scss styles/styles.scss public/css/styles.css",
+    "clean-css": "cleancss -o public/css/styles.min.css public/css/styles.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css && npm run clean-css\"",
-    "develop": "start fractal.cmd start --sync && start npm run watch-css"
+    "develop": "start fractal.cmd start --sync && start npm run watch-css",
+    "build": "start fractal.cmd build",
+    "dist": "npm run build-css && npm run build"
   }
 }

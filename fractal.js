@@ -33,7 +33,7 @@ fractal.web.set('static.path', path.join(__dirname, 'public'));
 /*
  * Tell Fractal where to export HTML pattern library.
  */
-fractal.web.set('builder.dest', __dirname + '/build');
+fractal.web.set('builder.dest', __dirname + '/dist');
 
 /*
  * Customise the default Fractal theme: Mandelbrot
