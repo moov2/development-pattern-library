@@ -1,8 +1,13 @@
-# Moov2 Pattern Library #
+# Moov2 Pattern Library
 
-##Getting started##
+Starting point for developing a pattern library using [Fractal](https://fractal.build/).
 
-- Clone the repo into project folder
+## Prerequisites
+
+To setup and run Fractal you'll need to have [NodeJS](https://nodejs.org/en/) installed. Fractal requires Node.js v4.4.7+ to run.
+
+## Getting started
+
 - Install [Fractal](https://fractal.build/guide/installation) via NPM
 	- Install Fractal in your project: `npm install --save @frctl/fractal`
 	- Install Fractal CLI (optional): `npm i -g @frctl/fractal`
