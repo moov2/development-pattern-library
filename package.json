@@ -18,8 +18,8 @@
     "build-css": "node-sass --include-path scss styles/styles.scss public/css/styles.css",
     "clean-css": "cleancss -o public/css/styles.min.css public/css/styles.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css && npm run clean-css\"",
-    "develop": "start fractal.cmd start --sync && start npm run watch-css",
-    "build": "start fractal.cmd build",
-    "dist": "npm run build-css && npm run build"
+    "develop": "npm install && start fractal.cmd start --sync && start npm run watch-css",
+    "build": "fractal.cmd build",
+    "dist": "npm install && npm run build-css && npm run build"
   }
 }
