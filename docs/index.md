@@ -1,8 +1,8 @@
 ---
-title: Moov2 Pattern Library
+title: Development Pattern Library
 ---
 
-<p>Hello! Welcome to the <strong>SMG TDP</strong> pattern library.</p>
+<p>Hello! Welcome to the <strong>development</strong> pattern library.</p>
 
 <h2>What is this?</h2>
 
