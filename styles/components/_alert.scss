@@ -1,0 +1,15 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $ALERT
+ * -----------------------------------------------------------------------------
+ */
+
+.alert {
+    @include rem(padding-bottom, $spacing-small);
+    @include rem(padding-left, $spacing-default);
+    @include rem(padding-right, $spacing-default);
+    @include rem(padding-top, $spacing-small);
+
+    background-color: $color-alert;
+    color: $color-alert-text; 
+}
