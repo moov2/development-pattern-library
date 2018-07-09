@@ -69,5 +69,5 @@ typings/
 
 build
 dist
-public
+public/css
 npm-debug.log
