@@ -8,13 +8,17 @@
  * SPACING
  */
 
-$base-unit: 1.2rem;
+$base-unit: 1.6rem;
 
-$spacing-tiny: $base-unit/4;
-$spacing-small: $base-unit/2;
-$spacing-default: $base-unit;
-$spacing-large: $base-unit*2;
-$spacing-huge: $base-unit*4;
+$spacing-xxxs: $base-unit / 6.8; /* .2rem */
+$spacing-xxs: $base-unit / 4.2;  /* .4rem */
+$spacing-xs: $base-unit / 2.6;   /* .6rem */
+$spacing-s: $base-unit / 1.6;    /* 1rem */
+$spacing-m: $base-unit;          /* 1.6rem */
+$spacing-l: $base-unit * 1.6;    /* 2.6rem */
+$spacing-xl: $base-unit * 2.6;   /* 4.2rem */
+$spacing-xxl: $base-unit * 4.2;  /* 6.8rem */
+$spacing-xxxl: $base-unit * 6.8; /* 11rem */
 
 /**
 * BORDER
@@ -122,9 +126,9 @@ $line-height-loose: 1.6;
 * GRID
 */
 
-$grid-gap-default: $spacing-large;
-$grid-gap-large: $spacing-large * 1.5;
-$grid-gap-huge: $spacing-huge * 1.5;
+$grid-gap-default: $spacing-l;
+$grid-gap-large: $spacing-l * 1.5;
+$grid-gap-huge: $spacing-xl * 1.5;
 
 
 /**
