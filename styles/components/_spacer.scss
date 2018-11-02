@@ -1,0 +1,19 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $SPACER
+ * -----------------------------------------------------------------------------
+ */
+
+.spacer {
+    @include clearfix();
+
+    &--xxxs { height: $spacing-xxxs; }
+    &--xxs { height: $spacing-xxs; }
+    &--xs { height: $spacing-xs; }
+    &--s { height: $spacing-s; }
+    &--m { height: $spacing-m; }
+    &--l { height: $spacing-l; }
+    &--xl { height: $spacing-xl; }
+    &--xxl { height: $spacing-xxl; }
+    &--xxxl { height: $spacing-xxxl; }
+}
