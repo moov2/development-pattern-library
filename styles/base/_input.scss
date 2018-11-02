@@ -7,11 +7,11 @@
 input {
     box-sizing: border-box;
 	display: block;
-	@include rem(margin-bottom, $spacing-large);
-	@include rem(padding-bottom, $spacing-default);
-	@include rem(padding-left, $spacing-default);
-	@include rem(padding-right, $spacing-default);
-	@include rem(padding-top, $spacing-default * .85);
+	@include rem(margin-bottom, $spacing-l);
+	@include rem(padding-bottom, $spacing-m);
+	@include rem(padding-left, $spacing-m);
+	@include rem(padding-right, $spacing-m);
+	@include rem(padding-top, $spacing-m * .85);
 	outline: none;
 	width: 100%;
 	
@@ -36,8 +36,8 @@ input {
 input[type=submit] {
 	display: inline-block;
 	max-width: 200px;
-	@include rem(padding-bottom, $spacing-default * 1.05);
-	@include rem(padding-top, $spacing-default * .95);
+	@include rem(padding-bottom, $spacing-m * 1.05);
+	@include rem(padding-top, $spacing-m * .95);
 	width: auto;
 
 	background-color: $color-brand-primary;

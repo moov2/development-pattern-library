@@ -17,7 +17,7 @@ thead {
 
 th {
     color: $color-white;
-    padding: $spacing-small $spacing-default;
+    padding: $spacing-xs $spacing-m;
 }
 
 tbody {
@@ -35,5 +35,5 @@ tbody {
 td,
 th {
     text-align: left;
-    padding: $spacing-small;
+    padding: $spacing-xs;
 }

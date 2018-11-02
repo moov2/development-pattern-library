@@ -9,20 +9,20 @@ input[type="radio"] {
 
     & + label {
         margin-bottom: 0;
-        @include rem(padding, $spacing-small);
+        @include rem(padding, $spacing-xs);
         
         @include bp-min-width($bp-mobile) {
-            @include rem(padding-bottom, $spacing-small);
-            @include rem(padding-left, $spacing-default);
-            @include rem(padding-right, $spacing-default);
-            @include rem(padding-top, $spacing-small);
+            @include rem(padding-bottom, $spacing-xs);
+            @include rem(padding-left, $spacing-m);
+            @include rem(padding-right, $spacing-m);
+            @include rem(padding-top, $spacing-xs);
         }
 
         cursor: pointer;
     }
 
     &:checked + label {
-        @include rem(border-radius, $spacing-tiny);
+        @include rem(border-radius, $spacing-xs);
 
         background-color: $color-grey;
         color: $color-white;

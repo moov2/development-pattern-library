@@ -5,10 +5,10 @@
  */
 
 .alert {
-    @include rem(padding-bottom, $spacing-small);
-    @include rem(padding-left, $spacing-default);
-    @include rem(padding-right, $spacing-default);
-    @include rem(padding-top, $spacing-small);
+    @include rem(padding-bottom, $spacing-xs);
+    @include rem(padding-left, $spacing-m);
+    @include rem(padding-right, $spacing-m);
+    @include rem(padding-top, $spacing-xs);
 
     background-color: $color-alert;
     color: $color-alert-text; 

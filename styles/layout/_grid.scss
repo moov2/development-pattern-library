@@ -68,13 +68,13 @@
 
 /* Pattern library example */ 
 .grid--example {
-    grid-gap: $spacing-default;
-    @include rem(margin-bottom, $spacing-default);
+    grid-gap: $spacing-m;
+    @include rem(margin-bottom, $spacing-m);
 
     &:last-child { margin-bottom: 0; }
     
     & .grid__item {
-        @include rem(padding, $spacing-default);  
+        @include rem(padding, $spacing-m);  
 
         background-color: lighten($color-grey-light, 30%);
         border-radius: 3px;
@@ -87,10 +87,10 @@
 
 .grid-gap {
     &--none { grid-gap: 0; }
-    &--tiny { grid-gap: $spacing-tiny; }
-    &--small { grid-gap: $spacing-small; }
-    &--default { grid-gap: $spacing-default; }
-    &--large { grid-gap: $spacing-large; }
-    &--huge { grid-gap: $spacing-huge; }
+    &--xs { grid-gap: $spacing-xs; }
+    &--xs { grid-gap: $spacing-xs; }
+    &--default { grid-gap: $spacing-m; }
+    &--large { grid-gap: $spacing-l; }
+    &--huge { grid-gap: $spacing-xl; }
 }
   

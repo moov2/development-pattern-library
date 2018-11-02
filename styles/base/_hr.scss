@@ -13,7 +13,7 @@ hr {
 	border-top-style: solid;
 	border-top-width: 1px;
 
-	@include rem(margin, $spacing-huge 0);
+	@include rem(margin, $spacing-xl 0);
 }
 
 .hr--dashed {

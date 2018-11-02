@@ -18,30 +18,30 @@ svg {
     }
 
     p + img {
-        @include rem(padding-top, $spacing-large);
+        @include rem(padding-top, $spacing-l);
     }
 
     img + p {
-        @include rem(padding-top, $spacing-huge);
+        @include rem(padding-top, $spacing-xl);
     }
 
     .image-align {
         &--left {
-            @include rem(margin-bottom, $spacing-large);
-            @include rem(padding-top, $spacing-tiny);
+            @include rem(margin-bottom, $spacing-l);
+            @include rem(padding-top, $spacing-xs);
 
             @include bp-min-width($bp-tablet) {
                 float: left;
-                @include rem(margin-right, $spacing-large);
+                @include rem(margin-right, $spacing-l);
             }
         }
         &--right {
-            @include rem(margin-bottom, $spacing-large);
-            @include rem(padding-top, $spacing-tiny);
+            @include rem(margin-bottom, $spacing-l);
+            @include rem(padding-top, $spacing-xs);
 
             @include bp-min-width($bp-tablet) {
                 float: right;
-                @include rem(margin-left, $spacing-large);
+                @include rem(margin-left, $spacing-l);
             }
         }
     }

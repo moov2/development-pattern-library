@@ -17,10 +17,10 @@ a {
 
 .link--cta {
     &-large {
-        @include rem(padding-bottom, $spacing-default);
-        @include rem(padding-left, $spacing-large);
-        @include rem(padding-right, $spacing-large);
-        @include rem(padding-top, $spacing-default);
+        @include rem(padding-bottom, $spacing-m);
+        @include rem(padding-left, $spacing-l);
+        @include rem(padding-right, $spacing-l);
+        @include rem(padding-top, $spacing-m);
         
         font-size: $font-size-heading-3-mobile;
     }
@@ -37,10 +37,10 @@ a {
 .link--admin {
     bottom: 0;
     position: fixed;
-    @include rem(padding-bottom, $spacing-default);
-    @include rem(padding-left, $spacing-large);
-    @include rem(padding-right, $spacing-large);
-    @include rem(padding-top, $spacing-default);
+    @include rem(padding-bottom, $spacing-m);
+    @include rem(padding-left, $spacing-l);
+    @include rem(padding-right, $spacing-l);
+    @include rem(padding-top, $spacing-m);
     right: 0;
     z-index: $z-index-front;
 

@@ -6,7 +6,7 @@
 
 label {
     @include rem(font-size, $font-size-small);
-	@include rem(margin-bottom, $spacing-small);
+	@include rem(margin-bottom, $spacing-xs);
 
     display: block;
     width: 100%;

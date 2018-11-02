@@ -5,9 +5,9 @@
  */
 
 blockquote {
-    padding-bottom: $spacing-small;
-    padding-left: $spacing-default;
-    padding-top: $spacing-small;
+    padding-bottom: $spacing-xs;
+    padding-left: $spacing-m;
+    padding-top: $spacing-xs;
     margin-left: 0;
     margin-right: 0;
 
@@ -15,8 +15,8 @@ blockquote {
     font-style: italic;
 
     @include bp-min-width($bp-tablet) {
-        margin-left: $spacing-large;
-        margin-right: $spacing-large;
+        margin-left: $spacing-l;
+        margin-right: $spacing-l;
     }
 }
 

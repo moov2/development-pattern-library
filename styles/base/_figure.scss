@@ -6,7 +6,7 @@
 
 figure {
     display: block;
-    @include rem(margin-bottom, $spacing-default);
+    @include rem(margin-bottom, $spacing-m);
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
@@ -20,7 +20,7 @@ figure {
     }
 
     figcaption {
-        @include rem(padding-top, $spacing-small);
+        @include rem(padding-top, $spacing-xs);
         
         color: $color-grey;
         font-size: $font-size-small;

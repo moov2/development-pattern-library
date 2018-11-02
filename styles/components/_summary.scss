@@ -9,7 +9,7 @@
 }
 
     .summary__media {
-        @include rem(margin-bottom, $spacing-default);
+        @include rem(margin-bottom, $spacing-m);
     }
 
     .summary__content {
@@ -21,7 +21,7 @@
     }
 
         .summary__title {
-            @include rem(margin-bottom, $spacing-small);
+            @include rem(margin-bottom, $spacing-xs);
             
             @include bp-min-width($bp-mobile-large) {
                 font-size: $font-size-large;
@@ -47,7 +47,7 @@
         }      
         .summary__media { 
             margin-bottom: 0;
-            @include rem(padding-right, $spacing-large);  
+            @include rem(padding-right, $spacing-l);  
             width: 40%;
         }
 
@@ -64,7 +64,7 @@
 
     .summary__content {
         bottom: 0;
-        @include rem(padding, $spacing-default); 
+        @include rem(padding, $spacing-m); 
         position: absolute;
         width: 100%;
         z-index: $z-index-default; 
@@ -72,7 +72,7 @@
         color: $color-white;
         
         @include bp-min-width($bp-mobile-large) {
-            @include rem(padding, $spacing-large); 
+            @include rem(padding, $spacing-l); 
         }
 
         &:after {
@@ -133,9 +133,9 @@
     background: $color-white;
 
     .summary__content {
-        @include rem(padding-bottom, $spacing-large);         
-        @include rem(padding-left, $spacing-large);         
-        @include rem(padding-right, $spacing-large);         
-        @include rem(padding-top, $spacing-default);         
+        @include rem(padding-bottom, $spacing-l);         
+        @include rem(padding-left, $spacing-l);         
+        @include rem(padding-right, $spacing-l);         
+        @include rem(padding-top, $spacing-m);         
     }
 }

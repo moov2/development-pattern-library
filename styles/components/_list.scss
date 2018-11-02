@@ -30,7 +30,7 @@
 
 .list--divided.list--spaced-large {
     > li {
-        @include rem(padding, $spacing-large);
+        @include rem(padding, $spacing-l);
     }
 }
 

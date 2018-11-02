@@ -5,12 +5,12 @@
  */
 
 fieldset {
-	@include rem(margin-bottom, $spacing-large);
+	@include rem(margin-bottom, $spacing-l);
 	margin-left: 0;
-	@include rem(padding-bottom, $spacing-default * 1.3);
-	@include rem(padding-left, $spacing-small);
-	@include rem(padding-right, $spacing-small);
-	@include rem(padding-top, $spacing-default);
+	@include rem(padding-bottom, $spacing-m * 1.3);
+	@include rem(padding-left, $spacing-xs);
+	@include rem(padding-right, $spacing-xs);
+	@include rem(padding-top, $spacing-m);
 
 	display: block;
 
@@ -25,16 +25,16 @@ fieldset {
 	}
 
 	legend {
-		@include rem(padding-left, $spacing-small);
-		@include rem(padding-right, $spacing-small);
+		@include rem(padding-left, $spacing-xs);
+		@include rem(padding-right, $spacing-xs);
 
 		font-size: $font-size-small;
 	}
 	
 	ul {
 		li {
-			@include rem(margin-left, $spacing-small);
-			@include rem(margin-right, $spacing-small);
+			@include rem(margin-left, $spacing-xs);
+			@include rem(margin-right, $spacing-xs);
 		}
 	}
 }

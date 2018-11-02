@@ -6,8 +6,8 @@
 
 ul,
 ol {
-    @include rem(margin-bottom, $spacing-large);
-    @include rem(padding-left, $spacing-large);
+    @include rem(margin-bottom, $spacing-l);
+    @include rem(padding-left, $spacing-l);
 
     box-sizing: border-box;
     margin-left: auto;
@@ -16,8 +16,8 @@ ol {
     width: 100%;
 
     > li {
-        @include rem(padding-bottom, $spacing-tiny);
-        @include rem(padding-top, $spacing-tiny);
+        @include rem(padding-bottom, $spacing-xs);
+        @include rem(padding-top, $spacing-xs);
 
         &:first-child {
             padding-top: 0;

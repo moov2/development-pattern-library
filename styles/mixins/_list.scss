@@ -11,7 +11,7 @@
 @mixin list-reset() {
     list-style: none;
     margin: 0;
-    @include rem(margin-bottom, $spacing-large);
+    @include rem(margin-bottom, $spacing-l);
     
     padding: 0;
 
@@ -22,8 +22,8 @@
 
 @mixin list-divided() {
     > li {
-        @include rem(padding-bottom, $spacing-small);
-        @include rem(padding-top, $spacing-small);
+        @include rem(padding-bottom, $spacing-xs);
+        @include rem(padding-top, $spacing-xs);
 
         border-bottom: 1px solid $color-grey;
 
@@ -52,16 +52,16 @@
 @mixin list-horizontal-divided() {
     > li {
         padding-bottom: 0;
-        @include rem(padding-left, $spacing-tiny);
-        @include rem(padding-right, $spacing-tiny);
+        @include rem(padding-left, $spacing-xs);
+        @include rem(padding-right, $spacing-xs);
         padding-top: 0;
 
         border-bottom: 0; 
         border-right: 1px solid $color-grey;
 
         @include bp-min-width($bp-mobile) {
-            @include rem(padding-left, $spacing-small);
-            @include rem(padding-right, $spacing-small);
+            @include rem(padding-left, $spacing-xs);
+            @include rem(padding-right, $spacing-xs);
         }
 
         &:first-child {
@@ -76,7 +76,7 @@
 
 @mixin list-horizontal-spaced() {
     > li {
-        @include rem(margin-right, $spacing-large);
+        @include rem(margin-right, $spacing-l);
         padding-bottom: 0;
         padding-top: 0;
 
@@ -88,8 +88,8 @@
 
 @mixin list-spaced() {
     > li {
-        @include rem(padding-bottom, $spacing-default);
-        @include rem(padding-top, $spacing-default);
+        @include rem(padding-bottom, $spacing-m);
+        @include rem(padding-top, $spacing-m);
     }
 }
 
