@@ -27,6 +27,8 @@ body {
         flex-direction: column;
     }
 
+    overflow-x: hidden;
+
     background-color: $color-site-background;
     color: $color-text-default;
     font-family: $font-family-default;
@@ -35,4 +37,5 @@ body {
 }
 
 *::selection {
+    background-color: lighten($color-brand-primary, 30%);
 }
