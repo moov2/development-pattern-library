@@ -1,0 +1,32 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $GUTENBERG
+ * -----------------------------------------------------------------------------
+ */
+
+.wp-block-column {
+    position: relative;
+    z-index: 0;
+}
+
+.wp-block-spacer {
+    clear: both;
+}
+
+.wp-block-cover-image {
+    margin-bottom: 0 !important;
+    min-height: 600px !important;
+}
+
+.wp-block-cover-image-text {
+    max-width: none !important;
+
+    @include heading-one();
+
+    font-size: $font-size-heading-mobile !important;
+    line-height: 1.1 !important;
+    
+    @include bp-min-width($bp-tablet) {
+        font-size: $font-size-heading !important;
+    }
+}

@@ -1,0 +1,599 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $CONTENT
+ * -----------------------------------------------------------------------------
+ */
+
+.page-content-wrapper {
+    max-width: $width-content;
+    margin-left: $spacing-m;
+    margin-right: $spacing-m;
+    min-height: 70vh;
+    
+    @include bp-min-width($bp-desktop) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+}
+
+.content {
+    display: flex;
+    flex-flow: wrap;
+    position: relative;
+
+    h2 {
+        @include bp-min-width($bp-desktop) {
+            font-size: $font-size-heading;
+        }
+
+        @include bp-min-width($bp-desktop-large) {
+            font-size: $font-size-hero;
+        }
+    }
+
+    p { max-width: none; }
+}
+
+    .content__title {
+        padding-left: $spacing-m;
+        padding-right: $spacing-m;
+
+        @include bp-min-width($bp-tablet) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .content__text {
+        padding-left: $spacing-m;
+        padding-right: $spacing-m;
+    }
+
+    .content__media-large {
+        margin-bottom:  $spacing-l;
+
+        @include bp-min-width($bp-tablet) {
+            margin-bottom: 0;
+        }
+    }
+
+.content--layout-1 {
+    .content__title {
+        @include bp-min-width($bp-tablet) {
+            position: absolute;
+            top: $spacing-xl;
+            left: $spacing-xl;
+            width: 57rem;
+        }
+
+        @include bp-min-width($bp-desktop) {
+            position: absolute;
+            top: $spacing-xl * 2;
+            left: $spacing-xl * 2;
+            width: 57rem;
+        }
+
+        @include bp-min-width($bp-desktop-large) {
+            top: $spacing-xl * 3;
+            left: $spacing-xl * 3;
+            width: 72rem;
+        }
+    }
+
+    .content__text {
+        @include bp-min-width($bp-tablet) {
+            margin-left: auto;
+            margin-top: $spacing-xl;
+            padding-left: $spacing-xl;
+            padding-right: $spacing-xl;
+            width: calc(75% - 100px);
+        }
+
+        @include bp-min-width($bp-desktop) {
+            padding-right: $spacing-xl * 2;
+        }
+
+        @include bp-min-width($bp-desktop-small) {
+            padding-left: $spacing-xl * 2;
+            padding-right: $spacing-xl * 3;
+            width: calc(75% - 150px);
+        }
+
+        @include bp-min-width($bp-desktop-medium) {
+            padding-left: $spacing-xl * 2;
+            padding-right: $spacing-xl * 7;
+            width: calc(75% - 200px);
+        }
+
+        @include bp-min-width($bp-desktop-large) {
+            padding-left: $spacing-xl * 5;
+            padding-right: $spacing-xl * 5;
+            width: calc(75% - 300px);
+        }
+
+        @include bp-min-width($bp-desktop-huge) {
+            padding-right: $spacing-xl * 7;
+            padding-left: $spacing-xl * 7;
+        }
+    }
+
+    .content__media-small {
+        position: absolute;
+        top: 20%;
+        left: 0;
+
+        width: 100px;
+
+        @include bp-min-width($bp-mobile) {
+            top: 28%;
+        }
+
+        @include bp-min-width($bp-tablet) {
+            top: 35%;
+            left: auto;
+            right: calc(75% - 100px);
+
+            width: 200px;
+        }
+
+        @include bp-min-width($bp-desktop) {
+            top: 50%;
+        }
+
+        @include bp-min-width($bp-desktop-small) {
+            bottom: $spacing-xl;
+            right: calc(75% - 150px);
+            top: auto;
+            width: 300px;
+        }
+
+        @include bp-min-width($bp-desktop-medium) {
+            bottom: $spacing-xl * 2;
+            right: calc(75% - 200px);
+            width: 400px;
+        }
+
+        @include bp-min-width($bp-desktop-large) {
+            bottom: $spacing-xl * 2;
+            right: calc(75% - 300px);
+            width: auto;
+        }
+    }
+
+    .content__media-large {
+        margin-left: auto;
+        width: 85%;
+
+        @include bp-min-width($bp-tablet) {
+            margin-left: auto;
+            width: 75%;
+        }
+    }
+}
+
+.content--layout-2 {
+    .content__title {
+        @include bp-min-width($bp-tablet) {
+            position: absolute;
+            top: $spacing-xl;
+            right: $spacing-xl;
+            width: 57rem;
+        }
+
+        @include bp-min-width($bp-desktop) {
+            position: absolute;
+            top: $spacing-xl * 2;
+            right: $spacing-xl * 2;
+            width: 57rem;
+        }
+
+        @include bp-min-width($bp-desktop-large) {
+            top: $spacing-xl * 3;
+            right: $spacing-xl * 3;
+            width: 72rem;
+        }
+    }
+
+    .content__text {
+        @include bp-min-width($bp-tablet) {
+            margin-right: auto;
+            margin-top: $spacing-xl;
+            padding-left: $spacing-xl;
+            padding-right: $spacing-xl;
+            width: calc(75% - 100px);
+        }
+
+        @include bp-min-width($bp-desktop) {
+            padding-left: $spacing-xl * 2;
+        }
+
+        @include bp-min-width($bp-desktop-small) {
+            padding-right: $spacing-xl * 2;
+            padding-left: $spacing-xl * 3;
+            width: calc(75% - 150px);
+        }
+
+        @include bp-min-width($bp-desktop-medium) {
+            padding-right: $spacing-xl * 2;
+            padding-left: $spacing-xl * 7;
+            width: calc(75% - 200px);
+        }
+
+        @include bp-min-width($bp-desktop-large) {
+            padding-right: $spacing-xl * 5;
+            padding-left: $spacing-xl * 5;
+            width: calc(75% - 300px);
+        }
+
+        @include bp-min-width($bp-desktop-huge) {
+            padding-right: $spacing-xl * 7;
+            padding-left: $spacing-xl * 7;
+        }
+    }
+
+    .content__media-small {
+        position: absolute;
+        top: 20%;
+        right: 0;
+
+        width: 100px;
+
+        @include bp-min-width($bp-mobile) {
+            top: 28%;
+        }
+
+        @include bp-min-width($bp-tablet) {
+            top: 35%;
+            right: auto;
+            left: calc(75% - 100px);
+
+            width: 200px;
+        }
+
+        @include bp-min-width($bp-desktop) {
+            top: 50%;
+        }
+
+        @include bp-min-width($bp-desktop-small) {
+            bottom: $spacing-xl;
+            left: calc(75% - 150px);
+            top: auto;
+            width: 300px;
+        }
+
+        @include bp-min-width($bp-desktop-medium) {
+            bottom: $spacing-xl * 2;
+            left: calc(75% - 200px);
+            width: 400px;
+        }
+
+        @include bp-min-width($bp-desktop-large) {
+            bottom: $spacing-xl * 2;
+            left: calc(75% - 300px);
+            width: auto;
+        }
+    }
+
+    .content__media-large {
+        margin-right: auto;
+        width: 85%;
+
+        @include bp-min-width($bp-tablet) {
+            margin-right: auto;
+            width: 75%;
+        }
+    }
+}
+
+.content--layout-3 {
+
+    .content__text--1 {
+        @include bp-min-width($bp-mobile-large) {
+            margin-bottom: $spacing-l;
+            width: calc(100% - 100px);
+        }
+
+        @include bp-min-width($bp-tablet) {
+            padding-left: $spacing-xl;
+            padding-right: $spacing-xl;
+            width: calc(100% - 200px);
+        }
+
+        @include bp-min-width($bp-desktop) {
+            margin-bottom: $spacing-xl;
+            padding-left: $spacing-xl;
+            padding-right: $spacing-xl;
+            width: calc(100% - 300px);
+        }
+
+        @include bp-min-width($bp-desktop-small) {
+            margin-bottom: 0;
+            padding-right: $spacing-xl;
+            padding-left: $spacing-xl;
+            padding-top: $spacing-xl;
+            width: 35%;
+        }
+
+        @include bp-min-width($bp-desktop-medium) {
+            padding-right: $spacing-xl * 2;
+        }
+
+        @include bp-min-width($bp-desktop-medium + 200px) {
+            padding-top: $spacing-xl * 2;
+            width: 30%;
+        }
+
+        @include bp-min-width($bp-desktop-large) {
+            padding-right: $spacing-xl * 2;
+        }
+
+        @include bp-min-width($bp-desktop-huge) {
+            padding-right: $spacing-xl * 5;
+        }
+    }
+
+    .content__text--2 {
+        @include bp-min-width($bp-tablet) {
+            padding-left: $spacing-xl;
+            padding-right: $spacing-xl;
+        }
+
+        @include bp-min-width($bp-desktop) {
+            margin-right: auto;
+            max-width: $width-content;
+            padding-left: $spacing-xl;
+            padding-right: $spacing-xl;
+        }
+
+        @include bp-min-width($bp-desktop-small) {
+            max-width: none;
+            padding-right: $spacing-xl * 2;
+            padding-left: $spacing-xl * 2;
+            width: calc(65% - 150px);
+        }
+
+        @include bp-min-width($bp-desktop-medium) {
+            padding-right: $spacing-xl * 2;
+            padding-left: $spacing-xl * 3;
+            width: calc(65% - 200px);
+        }
+
+        @include bp-min-width($bp-desktop-large) {
+            padding-right: $spacing-xl * 5;
+            padding-left: $spacing-xl * 5;
+            width: calc(70% - 250px);
+        }
+
+        @include bp-min-width($bp-desktop-huge) {
+            padding-right: $spacing-xl * 7;
+            padding-left: $spacing-xl * 7;
+        }
+    }
+
+    .content__media-small {
+        position: absolute;
+        top: 5%;
+        right: 0;
+
+        width: 100px;
+
+        @include bp-min-width($bp-mobile) {
+            top: 9%;
+        }
+
+        @include bp-min-width($bp-mobile-large) {
+            top: 36vw;
+        }
+
+        @include bp-min-width($bp-tablet) {
+            top: 36vw;
+            right: 0;
+
+            width: 200px;
+        }
+
+        @include bp-min-width($bp-desktop) {
+            top: 36vw;
+
+            width: 300px;
+        }
+
+        @include bp-min-width($bp-desktop-small) {
+            left: calc(65% - 150px);
+            right: auto;
+            top: 28vw;
+            width: 300px;
+        }
+
+        @include bp-min-width($bp-desktop-medium) {
+            bottom: $spacing-xl * 2;
+            left: calc(65% - 200px);
+            width: 400px;
+        }
+
+        @include bp-min-width($bp-desktop-medium + 200px) {
+            left: calc(70% - 200px);
+        }
+
+        @include bp-min-width($bp-desktop-large) {
+            bottom: $spacing-xl;
+            left: calc(70% - 250px);
+            width: 500px;
+        }
+    }
+
+    .content__media-large {
+        margin-right: auto;
+        width: 90%;
+
+        @include bp-min-width($bp-tablet) {
+            margin-bottom: $spacing-xl;
+        }
+
+        @include bp-min-width($bp-desktop-small) {
+            margin-right: auto;
+            width: 65%;
+        }
+
+        @include bp-min-width($bp-desktop-medium + 200px) {
+            margin-right: auto;
+            width: 70%;
+        }
+    }
+}
+
+.content--layout-4 {
+
+    .content__text--1 {
+        @include bp-min-width($bp-mobile-large) {
+            margin-bottom: $spacing-l;
+        }
+
+        @include bp-min-width($bp-tablet) {
+            margin-left: auto;
+            padding-right: $spacing-xl;
+            padding-left: $spacing-xl;
+            width: calc(100% - 200px);
+        }
+
+        @include bp-min-width($bp-desktop) {
+            margin-bottom: $spacing-xl;
+            padding-right: $spacing-xl;
+            padding-left: $spacing-xl;
+            width: calc(100% - 300px);
+        }
+
+        @include bp-min-width($bp-desktop-small) {
+            margin-bottom: 0;
+            padding-left: $spacing-xl;
+            padding-right: $spacing-xl;
+            padding-top: $spacing-xl;
+            width: 35%;
+
+            order: -1;
+        }
+
+        @include bp-min-width($bp-desktop-medium) {
+            padding-left: $spacing-xl * 2;
+        }
+
+        @include bp-min-width($bp-desktop-medium + 200px) {
+            padding-top: $spacing-xl * 2;
+            width: 30%;
+        }
+
+        @include bp-min-width($bp-desktop-large) {
+            padding-left: $spacing-xl * 2;
+        }
+
+        @include bp-min-width($bp-desktop-huge) {
+            padding-left: $spacing-xl * 5;
+        }
+    }
+
+    .content__text--2 {
+        @include bp-min-width($bp-tablet) {
+            padding-right: $spacing-xl;
+            padding-left: $spacing-xl;
+        }
+
+        @include bp-min-width($bp-desktop) {
+            margin-left: auto;
+            max-width: $width-content;
+            padding-right: $spacing-xl;
+            padding-left: $spacing-xl;
+        }
+
+        @include bp-min-width($bp-desktop-small) {
+            max-width: none;
+            padding-right: $spacing-xl * 2;
+            padding-left: $spacing-xl * 2;
+            width: calc(65% - 150px);
+        }
+
+        @include bp-min-width($bp-desktop-medium) {
+            padding-left: $spacing-xl * 2;
+            padding-right: $spacing-xl * 3;
+            width: calc(65% - 200px);
+        }
+
+        @include bp-min-width($bp-desktop-large) {
+            padding-right: $spacing-xl * 5;
+            padding-left: $spacing-xl * 5;
+            width: calc(70% - 250px);
+        }
+
+        @include bp-min-width($bp-desktop-huge) {
+            padding-right: $spacing-xl * 7;
+            padding-left: $spacing-xl * 7;
+        }
+    }
+
+    .content__media-small {
+        position: absolute;
+        top: 25vw;
+        left: 0;
+
+        width: 100px;
+
+        @include bp-min-width($bp-mobile-large) {
+            top: 25vw;
+        }
+
+        @include bp-min-width($bp-tablet) {
+            top: 36vw;
+            left: 0;
+
+            width: 200px;
+        }
+
+        @include bp-min-width($bp-desktop) {
+            top: 36vw;
+
+            width: 300px;
+        }
+
+        @include bp-min-width($bp-desktop-small) {
+            right: calc(65% - 150px);
+            left: auto;
+            top: 28vw;
+            width: 300px;
+        }
+
+        @include bp-min-width($bp-desktop-medium) {
+            bottom: $spacing-xl * 2;
+            right: calc(65% - 200px);
+            width: 400px;
+        }
+
+        @include bp-min-width($bp-desktop-medium + 200px) {
+            right: calc(70% - 200px);
+        }
+
+        @include bp-min-width($bp-desktop-large) {
+            bottom: $spacing-xl;
+            right: calc(70% - 250px);
+            width: 500px;
+        }
+    }
+
+    .content__media-large {
+        margin-left: auto;
+        width: 90%;
+
+        @include bp-min-width($bp-tablet) {
+            margin-bottom: $spacing-xl;
+        }
+
+        @include bp-min-width($bp-desktop-small) {
+            margin-left: auto;
+            width: 65%;
+        }
+
+        @include bp-min-width($bp-desktop-medium + 200px) {
+            margin-left: auto;
+            width: 70%;
+        }
+    }
+}
