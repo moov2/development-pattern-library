@@ -32,19 +32,15 @@ $input-border-width: 1px;
 * BREAKPOINTS
 */
 
-$bp: (
-    "small": 320px,
-    "medium": 768px,
-    "large":  1024px
-);
-
 $bp-mobile-small: 320px;
 $bp-mobile: 375px;
 $bp-mobile-large: 425px;
 $bp-tablet: 768px;
 $bp-desktop: 1024px;
+$bp-desktop-small: 1280px;
 $bp-desktop-medium: 1440px;
 $bp-desktop-large: 1920px;
+$bp-desktop-huge: 2200px;
 
 /**
 * BUTTONS
