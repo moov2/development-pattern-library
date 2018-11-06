@@ -9,11 +9,11 @@
  */
 
 @mixin heading-one() {
+    @include text-heading();
+
     margin-top: 0;
 
-    font-family: $font-family-heading;
     font-size: $font-size-heading-mobile;
-    font-weight: $font-weight-bold;
     line-height: 1.2;
     
     @include bp-min-width($bp-tablet) {
@@ -22,11 +22,11 @@
 }
 
 @mixin heading-two() { 
+    @include text-heading();
+
     margin-top: 0;
 
-    font-family: $font-family-heading;
     font-size: $font-size-heading-2-mobile;
-    font-weight: $font-weight-bold;
     line-height: 1.2;
 
     @include bp-min-width($bp-tablet) {
@@ -35,11 +35,11 @@
 }
 
 @mixin heading-three() { 
+    @include text-heading();
+
     margin-top: 0;
 
-    font-family: $font-family-heading;
     font-size: $font-size-heading-3-mobile;
-    font-weight: $font-weight-bold;
     line-height: 1.2;
 
     @include bp-min-width($bp-tablet) {
@@ -48,11 +48,11 @@
 }
 
 @mixin heading-four() { 
+    @include text-heading();
+
     margin-top: 0;
 
-    font-family: $font-family-heading;
     font-size: $font-size-heading-4-mobile;
-    font-weight: $font-weight-bold;
     line-height: 1.2;
 
     @include bp-min-width($bp-tablet) {
@@ -61,11 +61,11 @@
 }
 
 @mixin heading-five() { 
+    @include text-heading();
+
     margin-top: 0;
 
-    font-family: $font-family-heading;
     font-size: $font-size-heading-5-mobile;
-    font-weight: $font-weight-bold;
     line-height: 1.2;
 
     @include bp-min-width($bp-tablet) {
@@ -74,11 +74,11 @@
 }
 
 @mixin heading-six() { 
+    @include text-heading();
+
     margin-top: 0;
 
-    font-family: $font-family-heading;
     font-size: $font-size-heading-6-mobile;
-    font-weight: $font-weight-bold;
     line-height: 1.2;
 
     @include bp-min-width($bp-tablet) {
