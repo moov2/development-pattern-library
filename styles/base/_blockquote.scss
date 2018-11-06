@@ -5,18 +5,20 @@
  */
 
 blockquote {
-    padding-bottom: $spacing-xs;
-    padding-left: $spacing-m;
-    padding-top: $spacing-xs;
-    margin-left: 0;
-    margin-right: 0;
+    position: relative;
 
-    border-left: 4px solid $color-grey;
-    font-style: italic;
+    margin: 0 0 $spacing-l 0;
+
+    @include text-blockquote();   
+    color: $color-grey-light;
 
     @include bp-min-width($bp-tablet) {
-        margin-left: $spacing-l;
-        margin-right: $spacing-l;
+        font-size: $font-size-blockquote;
+    }
+
+    p {
+        hanging-punctuation: first;
+        text-indent: -0.4em;
     }
 }
 

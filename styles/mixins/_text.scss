@@ -8,6 +8,15 @@
  * Helpful mixins for text.
  */
 
+@mixin text-blockquote() {
+    font-style: italic;
+    font-weight: $font-weight-light;
+
+    p {
+        font-weight: $font-weight-light;
+    }
+}
+
 @mixin text-heading() {
     font-family: $font-family-heading;
     font-weight: $font-weight-bold;
