@@ -15,9 +15,15 @@ ol {
     margin-top: 0;
     width: 100%;
 
+    list-style-position: outside;
+
+    @include bp-min-width($bp-tablet) {
+        padding-left: 0;
+    }
+
     > li {
-        @include rem(padding-bottom, $spacing-xs);
-        @include rem(padding-top, $spacing-xs);
+        @include rem(padding-bottom, $spacing-xxxs);
+        @include rem(padding-top, $spacing-xxxs);
 
         &:first-child {
             padding-top: 0;
