@@ -5,15 +5,20 @@
  */
 
 .page-content-wrapper {
-    max-width: $width-content;
-    margin-left: $spacing-m;
-    margin-right: $spacing-m;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $spacing-m;
+    padding-right: $spacing-m;
     min-height: 70vh;
     
-    @include bp-min-width($bp-desktop) {
-        margin-left: auto;
-        margin-right: auto;
+    @include bp-min-width($bp-tablet) {
+        max-width: $width-content;
         width: 100%;
+    }
+
+    @include bp-min-width($bp-desktop) {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
