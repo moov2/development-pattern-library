@@ -1,0 +1,74 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $MOBILE-MENU
+ * -----------------------------------------------------------------------------
+ */
+
+ .mobile-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    z-index: $z-index-nav;
+
+    background-color: rgba($color-grey, 1);
+    background-image: url('#{$image-path-pl}/patterns/pattern-white-outline-transparent.png');
+    color: $color-white;
+
+    display: block;
+    transition-property: top;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+    .mobile-menu.is-visible {
+        top: 0;
+        transition-property: top;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .mobile-menu__close {
+        position: absolute;
+        top: 17px;
+        right: $spacing-m * 1.5;
+    }
+
+    .mobile-menu__content {
+        @include rem(padding-bottom, $spacing-l);
+        @include rem(padding-top, $spacing-xl);
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%)
+    }
+
+        .mobile-menu__pages {
+            padding-left: 0;
+
+            list-style: none;
+            letter-spacing: $letter-spacing-loose;
+            text-align: center;
+            text-transform: uppercase;
+
+            > li {
+                @include rem(margin-bottom, $spacing-m);
+            }
+
+            a {
+                @include rem(padding-bottom, $spacing-xs);
+                @include rem(padding-top, $spacing-xs);
+
+                color: $color-white;
+                text-decoration: none;
+            }
+
+            .current-menu-item {
+                color: $color-brand-primary;
+                font-weight: $font-weight-bold;
+            }
+        }
