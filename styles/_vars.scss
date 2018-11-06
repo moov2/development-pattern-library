@@ -42,6 +42,9 @@ $bp-desktop-medium: 1440px;
 $bp-desktop-large: 1920px;
 $bp-desktop-huge: 2200px;
 
+/* WordPress admin bar changes height at this breakpoint */
+$bp-wp-mobile: 783px;
+
 /**
 * BUTTONS
 */
@@ -87,6 +90,7 @@ $font-family-default: 'Lato', sans-serif;
 
 $font-weight-bold: 700;
 $font-weight-default: 400;
+$font-weight-light: 300;
 
 $font-size-default-em: 1.8em;
 $font-size-default: 1.8rem;
@@ -113,8 +117,11 @@ $font-size-heading-5-mobile: $font-size-default;
 $font-size-heading-6: $font-size-small;
 $font-size-heading-6-mobile: $font-size-small;
 
+$font-size-navigation: $font-size-default;
+
 $letter-spacing-loose: 1px;
 
+$line-height-tight: 1;
 $line-height-default: 1.4;
 $line-height-loose: 1.6;
 
@@ -126,6 +133,18 @@ $grid-gap-default: $spacing-l;
 $grid-gap-large: $spacing-l * 1.5;
 $grid-gap-huge: $spacing-xl * 1.5;
 
+/**
+* HEADER
+*/
+
+$header-height-mobile: $spacing-xl;
+
+/**
+* PATHS
+*/
+
+$image-path-pl: '../pattern-library/images' !default;
+$font-path-pl: '../fonts' !default;
 
 /**
 * TRANSITION
@@ -143,7 +162,8 @@ $width-login-form: 480px;
 $width-content-narrow: 600px;
 $width-content: 900px;
 $width-content-large: 1560px;
-$width-header-content: 1650px;
+$width-header-content: 1280px;
+$width-footer-content: 1280px;
 
 $layout-content-wide-width: 128rem;
 $layout-content-width: 80rem;
@@ -153,6 +173,7 @@ $layout-content-width: 80rem;
 * Z-INDEX
 */
 
+$z-index-nav: 1000;
 $z-index-front: 100;
 $z-index-default: 1;
 $z-index-under: -1;
