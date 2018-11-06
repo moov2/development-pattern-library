@@ -1,0 +1,25 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $POST
+ * -----------------------------------------------------------------------------
+ */
+
+.post {}
+
+    .post__featured-media {
+        @include rem(margin-bottom, $spacing-xl);
+    }
+
+    .post__title {
+        @include rem(margin-bottom, $spacing-s);
+    }
+
+    .post__meta {
+        @include rem(margin-bottom, $spacing-xl);
+
+        color: $color-grey-light;
+
+        a {
+            color: $color-grey-light;
+        }
+    }
