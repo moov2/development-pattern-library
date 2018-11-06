@@ -1,0 +1,22 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $TEXT
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * Helpful mixins for text.
+ */
+
+@mixin text-heading() {
+    font-family: $font-family-heading;
+    font-weight: $font-weight-bold;
+}
+
+@mixin text-navigation() {
+    font-family: $font-family-heading;
+    font-weight: $font-weight-light;
+    letter-spacing: $letter-spacing-loose;
+    line-height: $line-height-tight;
+    text-transform: uppercase;
+}
