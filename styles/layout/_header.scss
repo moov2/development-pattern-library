@@ -11,7 +11,7 @@ header {
 
     .header__content {
         display: flex;
-        align-items: flex-end;
+        align-items: center;
 
         @include rem(margin-left, $spacing-l);
         @include rem(margin-right, $spacing-l);
