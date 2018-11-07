@@ -407,7 +407,7 @@
         @include bp-min-width($bp-desktop-small) {
             left: calc(65% - 150px);
             right: auto;
-            top: 28vw;
+            top: auto;
             width: 300px;
         }
 
@@ -562,7 +562,7 @@
         @include bp-min-width($bp-desktop-small) {
             right: calc(65% - 150px);
             left: auto;
-            top: 28vw;
+            top: auto;
             width: 300px;
         }
 
