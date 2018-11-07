@@ -1,18 +1,21 @@
 /**
  * -----------------------------------------------------------------------------
- * $SUMMARY
+ * $CARD
  * -----------------------------------------------------------------------------
  */
 
-.summary {
+.card {
     position: relative;
+    max-width: 768px;
+
+    text-decoration: none;
 }
 
-    .summary__media {
+    .card__media {
         @include rem(margin-bottom, $spacing-m);
     }
 
-    .summary__content {
+    .card__content {
         font-size: $font-size-small;
 
         @include bp-min-width($bp-mobile-large) {
@@ -20,7 +23,7 @@
         }
     }
 
-        .summary__title {
+        .card__title {
             @include rem(margin-bottom, $spacing-xs);
             
             @include bp-min-width($bp-mobile-large) {
@@ -28,24 +31,24 @@
             }
         }
 
-        .summary__meta {
+        .card__meta {
             color: $color-grey;
         }
 
-        .summary__excerpt {}
+        .card__excerpt {}
 
-        .summary__cta {}
+        .card__cta {}
 
 
-.summary--horizontal {
+.card--horizontal {
     @include bp-min-width($bp-tablet) {
-        .summary__media,
-        .summary__content {
+        .card__media,
+        .card__content {
             display: inline-block;
             vertical-align: top;
             width: 60%;
         }      
-        .summary__media { 
+        .card__media { 
             margin-bottom: 0;
             @include rem(padding-right, $spacing-l);  
             width: 40%;
@@ -57,12 +60,12 @@
     }
 }
 
-.summary--overlay-v1,
-.summary--overlay-v2,
-.summary--overlay-v3 {
+.card--overlay-v1,
+.card--overlay-v2,
+.card--overlay-v3 {
     overflow: hidden;
 
-    .summary__content {
+    .card__content {
         bottom: 0;
         @include rem(padding, $spacing-m); 
         position: absolute;
@@ -89,50 +92,50 @@
         }
     }
 
-        .summary__title { 
+        .card__title { 
             opacity: 1;
 
             @include bp-min-width($bp-mobile-large) {
                 font-size: $font-size-heading-2-mobile;
             }
         }
-        .summary__meta { 
+        .card__meta { 
             color: $color-white;
             opacity: .6; 
         }
-        .summary__excerpt { opacity: .9; }
-        .summary__cta { opacity: 1; }
+        .card__excerpt { opacity: .9; }
+        .card__cta { opacity: 1; }
 
-    .summary__media {
+    .card__media {
         margin-bottom: 0;
         z-index: $z-index-back;
     }
 }
 
-.summary--overlay-v2 {
-    .summary__content {
+.card--overlay-v2 {
+    .card__content {
         bottom: -15rem;
         transition: bottom .3s ease-in-out;
     }
 
     &:hover {
-        .summary__content {
+        .card__content {
             bottom: 0;
         }
     }
 }
 
-.summary--overlay-v3 {
+.card--overlay-v3 {
 
-    .summary__content {
+    .card__content {
         height: 100%;
     }
 }
 
-.summary--white {
+.card--white {
     background: $color-white;
 
-    .summary__content {
+    .card__content {
         @include rem(padding-bottom, $spacing-l);         
         @include rem(padding-left, $spacing-l);         
         @include rem(padding-right, $spacing-l);         
