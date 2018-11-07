@@ -7,7 +7,7 @@
 .margin-horizontal--auto { margin-left: auto; margin-right: auto; }
  
 .margin-horizontal--xs { @include rem(margin-left, $spacing-xs); @include rem(margin-right, $spacing-xs); }
-.margin-horizontal--xs\@mobile-xs { @include bp-min-width($bp-mobile-small) { @include rem(margin-left, $spacing-xs); @include rem(margin-right, $spacing-xs); } }
+.margin-horizontal--xs\@mobile-small { @include bp-min-width($bp-mobile-small) { @include rem(margin-left, $spacing-xs); @include rem(margin-right, $spacing-xs); } }
 .margin-horizontal--xs\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-left, $spacing-xs); @include rem(margin-right, $spacing-xs); } }
 .margin-horizontal--xs\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-left, $spacing-xs); @include rem(margin-right, $spacing-xs); } }
 .margin-horizontal--xs\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-left, $spacing-xs); @include rem(margin-right, $spacing-xs); } }
@@ -15,44 +15,44 @@
 .margin-horizontal--xs\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-left, $spacing-xs); @include rem(margin-right, $spacing-xs); } }
 .margin-horizontal--xs\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-left, $spacing-xs); @include rem(margin-right, $spacing-xs); } }
 
-.margin-horizontal--xs { @include rem(margin-left, $spacing-xs); @include rem(margin-right, $spacing-xs); }
-.margin-horizontal--xs\@mobile-xs { @include bp-min-width($bp-mobile-small) { @include rem(margin-left, $spacing-xs); @include rem(margin-right, $spacing-xs); } }
-.margin-horizontal--xs\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-left, $spacing-xs); @include rem(margin-right, $spacing-xs); } }
-.margin-horizontal--xs\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-left, $spacing-xs); @include rem(margin-right, $spacing-xs); } }
-.margin-horizontal--xs\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-left, $spacing-xs); @include rem(margin-right, $spacing-xs); } }
-.margin-horizontal--xs\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-left, $spacing-xs); @include rem(margin-right, $spacing-xs); } }
-.margin-horizontal--xs\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-left, $spacing-xs); @include rem(margin-right, $spacing-xs); } }
-.margin-horizontal--xs\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-left, $spacing-xs); @include rem(margin-right, $spacing-xs); } }
+.margin-horizontal--s { @include rem(margin-left, $spacing-s); @include rem(margin-right, $spacing-s); }
+.margin-horizontal--s\@mobile-small { @include bp-min-width($bp-mobile-small) { @include rem(margin-left, $spacing-s); @include rem(margin-right, $spacing-s); } }
+.margin-horizontal--s\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-left, $spacing-s); @include rem(margin-right, $spacing-s); } }
+.margin-horizontal--s\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-left, $spacing-s); @include rem(margin-right, $spacing-s); } }
+.margin-horizontal--s\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-left, $spacing-s); @include rem(margin-right, $spacing-s); } }
+.margin-horizontal--s\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-left, $spacing-s); @include rem(margin-right, $spacing-s); } }
+.margin-horizontal--s\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-left, $spacing-s); @include rem(margin-right, $spacing-s); } }
+.margin-horizontal--s\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-left, $spacing-s); @include rem(margin-right, $spacing-s); } }
 
-.margin-horizontal--default { @include rem(margin-left, $spacing-m); @include rem(margin-right, $spacing-m); }
-.margin-horizontal--default\@mobile-xs { @include bp-min-width($bp-mobile-small) { @include rem(margin-left, $spacing-m); @include rem(margin-right, $spacing-m); } }
-.margin-horizontal--default\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-left, $spacing-m); @include rem(margin-right, $spacing-m); } }
-.margin-horizontal--default\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-left, $spacing-m); @include rem(margin-right, $spacing-m); } }
-.margin-horizontal--default\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-left, $spacing-m); @include rem(margin-right, $spacing-m); } }
-.margin-horizontal--default\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-left, $spacing-m); @include rem(margin-right, $spacing-m); } }
-.margin-horizontal--default\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-left, $spacing-m); @include rem(margin-right, $spacing-m); } }
-.margin-horizontal--default\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-left, $spacing-m); @include rem(margin-right, $spacing-m); } }
+.margin-horizontal--m { @include rem(margin-left, $spacing-m); @include rem(margin-right, $spacing-m); }
+.margin-horizontal--m\@mobile-small { @include bp-min-width($bp-mobile-small) { @include rem(margin-left, $spacing-m); @include rem(margin-right, $spacing-m); } }
+.margin-horizontal--m\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-left, $spacing-m); @include rem(margin-right, $spacing-m); } }
+.margin-horizontal--m\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-left, $spacing-m); @include rem(margin-right, $spacing-m); } }
+.margin-horizontal--m\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-left, $spacing-m); @include rem(margin-right, $spacing-m); } }
+.margin-horizontal--m\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-left, $spacing-m); @include rem(margin-right, $spacing-m); } }
+.margin-horizontal--m\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-left, $spacing-m); @include rem(margin-right, $spacing-m); } }
+.margin-horizontal--m\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-left, $spacing-m); @include rem(margin-right, $spacing-m); } }
 
-.margin-horizontal--large { @include rem(margin-left, $spacing-l); @include rem(margin-right, $spacing-l); }
-.margin-horizontal--large\@mobile-xs { @include bp-min-width($bp-mobile-small) { @include rem(margin-left, $spacing-l); @include rem(margin-right, $spacing-l); } }
-.margin-horizontal--large\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-left, $spacing-l); @include rem(margin-right, $spacing-l); } }
-.margin-horizontal--large\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-left, $spacing-l); @include rem(margin-right, $spacing-l); } }
-.margin-horizontal--large\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-left, $spacing-l); @include rem(margin-right, $spacing-l); } }
-.margin-horizontal--large\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-left, $spacing-l); @include rem(margin-right, $spacing-l); } }
-.margin-horizontal--large\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-left, $spacing-l); @include rem(margin-right, $spacing-l); } }
-.margin-horizontal--large\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-left, $spacing-l); @include rem(margin-right, $spacing-l); } }
+.margin-horizontal--l { @include rem(margin-left, $spacing-l); @include rem(margin-right, $spacing-l); }
+.margin-horizontal--l\@mobile-small { @include bp-min-width($bp-mobile-small) { @include rem(margin-left, $spacing-l); @include rem(margin-right, $spacing-l); } }
+.margin-horizontal--l\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-left, $spacing-l); @include rem(margin-right, $spacing-l); } }
+.margin-horizontal--l\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-left, $spacing-l); @include rem(margin-right, $spacing-l); } }
+.margin-horizontal--l\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-left, $spacing-l); @include rem(margin-right, $spacing-l); } }
+.margin-horizontal--l\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-left, $spacing-l); @include rem(margin-right, $spacing-l); } }
+.margin-horizontal--l\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-left, $spacing-l); @include rem(margin-right, $spacing-l); } }
+.margin-horizontal--l\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-left, $spacing-l); @include rem(margin-right, $spacing-l); } }
 
-.margin-horizontal--huge { @include rem(margin-left, $spacing-xl); @include rem(margin-right, $spacing-xl); }
-.margin-horizontal--huge\@mobile-xs { @include bp-min-width($bp-mobile-small) { @include rem(margin-left, $spacing-xl); @include rem(margin-right, $spacing-xl); } }
-.margin-horizontal--huge\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-left, $spacing-xl); @include rem(margin-right, $spacing-xl); } }
-.margin-horizontal--huge\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-left, $spacing-xl); @include rem(margin-right, $spacing-xl); } }
-.margin-horizontal--huge\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-left, $spacing-xl); @include rem(margin-right, $spacing-xl); } }
-.margin-horizontal--huge\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-left, $spacing-xl); @include rem(margin-right, $spacing-xl); } }
-.margin-horizontal--huge\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-left, $spacing-xl); @include rem(margin-right, $spacing-xl); } }
-.margin-horizontal--huge\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-left, $spacing-xl); @include rem(margin-right, $spacing-xl); } }
+.margin-horizontal--xl { @include rem(margin-left, $spacing-xl); @include rem(margin-right, $spacing-xl); }
+.margin-horizontal--xl\@mobile-small { @include bp-min-width($bp-mobile-small) { @include rem(margin-left, $spacing-xl); @include rem(margin-right, $spacing-xl); } }
+.margin-horizontal--xl\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-left, $spacing-xl); @include rem(margin-right, $spacing-xl); } }
+.margin-horizontal--xl\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-left, $spacing-xl); @include rem(margin-right, $spacing-xl); } }
+.margin-horizontal--xl\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-left, $spacing-xl); @include rem(margin-right, $spacing-xl); } }
+.margin-horizontal--xl\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-left, $spacing-xl); @include rem(margin-right, $spacing-xl); } }
+.margin-horizontal--xl\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-left, $spacing-xl); @include rem(margin-right, $spacing-xl); } }
+.margin-horizontal--xl\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-left, $spacing-xl); @include rem(margin-right, $spacing-xl); } }
 
 .margin-horizontal--none { margin-left: 0; margin-right: 0; }
-.margin-horizontal--none\@mobile-xs { @include bp-min-width($bp-mobile-small) { margin-left: 0; margin-right: 0; } }
+.margin-horizontal--none\@mobile-small { @include bp-min-width($bp-mobile-small) { margin-left: 0; margin-right: 0; } }
 .margin-horizontal--none\@mobile { @include bp-min-width($bp-mobile) { margin-left: 0; margin-right: 0; } }
 .margin-horizontal--none\@mobile-large { @include bp-min-width($bp-mobile-large) { margin-left: 0; margin-right: 0; } }
 .margin-horizontal--none\@tablet { @include bp-min-width($bp-tablet) { margin-left: 0; margin-right: 0; } }
@@ -61,7 +61,7 @@
 .margin-horizontal--none\@desktop-large { @include bp-min-width($bp-desktop-large) { margin-left: 0; margin-right: 0; } }
 
 .margin--xs { @include rem(margin, $spacing-xs); }
-.margin--xs\@mobile-xs { @include bp-min-width($bp-mobile-small) { @include rem(margin, $spacing-xs); } }
+.margin--xs\@mobile-small { @include bp-min-width($bp-mobile-small) { @include rem(margin, $spacing-xs); } }
 .margin--xs\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin, $spacing-xs); } }
 .margin--xs\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin, $spacing-xs); } }
 .margin--xs\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin, $spacing-xs); } }
@@ -69,44 +69,44 @@
 .margin--xs\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin, $spacing-xs); } }
 .margin--xs\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin, $spacing-xs); } }
 
-.margin--xs { @include rem(margin, $spacing-xs); }
-.margin--xs\@mobile-xs { @include bp-min-width($bp-mobile-small) { @include rem(margin, $spacing-xs); } }
-.margin--xs\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin, $spacing-xs); } }
-.margin--xs\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin, $spacing-xs); } }
-.margin--xs\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin, $spacing-xs); } }
-.margin--xs\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin, $spacing-xs); } }
-.margin--xs\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin, $spacing-xs); } }
-.margin--xs\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin, $spacing-xs); } }
+.margin--s { @include rem(margin, $spacing-s); }
+.margin--s\@mobile-small { @include bp-min-width($bp-mobile-small) { @include rem(margin, $spacing-s); } }
+.margin--s\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin, $spacing-s); } }
+.margin--s\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin, $spacing-s); } }
+.margin--s\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin, $spacing-s); } }
+.margin--s\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin, $spacing-s); } }
+.margin--s\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin, $spacing-s); } }
+.margin--s\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin, $spacing-s); } }
 
-.margin--default { @include rem(margin, $spacing-m); }
-.margin--default\@mobile-xs { @include bp-min-width($bp-mobile-small) { @include rem(margin, $spacing-m); } }
-.margin--default\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin, $spacing-m); } }
-.margin--default\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin, $spacing-m); } }
-.margin--default\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin, $spacing-m); } }
-.margin--default\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin, $spacing-m); } }
-.margin--default\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin, $spacing-m); } }
-.margin--default\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin, $spacing-m); } }
+.margin--m { @include rem(margin, $spacing-m); }
+.margin--m\@mobile-small { @include bp-min-width($bp-mobile-small) { @include rem(margin, $spacing-m); } }
+.margin--m\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin, $spacing-m); } }
+.margin--m\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin, $spacing-m); } }
+.margin--m\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin, $spacing-m); } }
+.margin--m\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin, $spacing-m); } }
+.margin--m\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin, $spacing-m); } }
+.margin--m\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin, $spacing-m); } }
 
-.margin--large { @include rem(margin, $spacing-l); }
-.margin--large\@mobile-xs { @include bp-min-width($bp-mobile-small) { @include rem(margin, $spacing-l); } }
-.margin--large\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin, $spacing-l); } }
-.margin--large\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin, $spacing-l); } }
-.margin--large\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin, $spacing-l); } }
-.margin--large\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin, $spacing-l); } }
-.margin--large\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin, $spacing-l); } }
-.margin--large\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin, $spacing-l); } }
+.margin--l { @include rem(margin, $spacing-l); }
+.margin--l\@mobile-small { @include bp-min-width($bp-mobile-small) { @include rem(margin, $spacing-l); } }
+.margin--l\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin, $spacing-l); } }
+.margin--l\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin, $spacing-l); } }
+.margin--l\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin, $spacing-l); } }
+.margin--l\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin, $spacing-l); } }
+.margin--l\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin, $spacing-l); } }
+.margin--l\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin, $spacing-l); } }
 
-.margin--huge { @include rem(margin, $spacing-xl); }
-.margin--huge\@mobile-xs { @include bp-min-width($bp-mobile-small) { @include rem(margin, $spacing-xl); } }
-.margin--huge\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin, $spacing-xl); } }
-.margin--huge\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin, $spacing-xl); } }
-.margin--huge\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin, $spacing-xl); } }
-.margin--huge\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin, $spacing-xl); } }
-.margin--huge\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin, $spacing-xl); } }
-.margin--huge\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin, $spacing-xl); } }
+.margin--xl { @include rem(margin, $spacing-xl); }
+.margin--xl\@mobile-small { @include bp-min-width($bp-mobile-small) { @include rem(margin, $spacing-xl); } }
+.margin--xl\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin, $spacing-xl); } }
+.margin--xl\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin, $spacing-xl); } }
+.margin--xl\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin, $spacing-xl); } }
+.margin--xl\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin, $spacing-xl); } }
+.margin--xl\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin, $spacing-xl); } }
+.margin--xl\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin, $spacing-xl); } }
 
 .margin--none { margin: 0 !important; }
-.margin--none\@mobile-xs { @include bp-min-width($bp-mobile-small) { margin: 0 !important; } }
+.margin--none\@mobile-small { @include bp-min-width($bp-mobile-small) { margin: 0 !important; } }
 .margin--none\@mobile { @include bp-min-width($bp-mobile) { margin: 0 !important; } }
 .margin--none\@mobile-large { @include bp-min-width($bp-mobile-large) { margin: 0 !important; } }
 .margin--none\@tablet { @include bp-min-width($bp-tablet) { margin: 0 !important; } }
@@ -115,7 +115,7 @@
 .margin--none\@desktop-large { @include bp-min-width($bp-desktop-large) { margin: 0 !important; } }
 
 .margin-bottom--xs { @include rem(margin-bottom, $spacing-xs); }
-.margin-bottom--xs\@mobile-xs { @include bp-min-width($bp-mobile-small) { @include rem(margin-bottom, $spacing-xs); } }
+.margin-bottom--xs\@mobile-small { @include bp-min-width($bp-mobile-small) { @include rem(margin-bottom, $spacing-xs); } }
 .margin-bottom--xs\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-bottom, $spacing-xs); } }
 .margin-bottom--xs\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-bottom, $spacing-xs); } }
 .margin-bottom--xs\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-bottom, $spacing-xs); } }
@@ -123,44 +123,44 @@
 .margin-bottom--xs\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-bottom, $spacing-xs); } }
 .margin-bottom--xs\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-bottom, $spacing-xs); } }
 
-.margin-bottom--xs { @include rem(margin-bottom, $spacing-xs); }
-.margin-bottom--xs\@mobile-xs { @include bp-min-width($bp-mobile-small) { @include rem(margin-bottom, $spacing-xs); } }
-.margin-bottom--xs\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-bottom, $spacing-xs); } }
-.margin-bottom--xs\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-bottom, $spacing-xs); } }
-.margin-bottom--xs\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-bottom, $spacing-xs); } }
-.margin-bottom--xs\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-bottom, $spacing-xs); } }
-.margin-bottom--xs\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-bottom, $spacing-xs); } }
-.margin-bottom--xs\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-bottom, $spacing-xs); } }
+.margin-bottom--s { @include rem(margin-bottom, $spacing-s); }
+.margin-bottom--s\@mobile-small { @include bp-min-width($bp-mobile-small) { @include rem(margin-bottom, $spacing-s); } }
+.margin-bottom--s\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-bottom, $spacing-s); } }
+.margin-bottom--s\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-bottom, $spacing-s); } }
+.margin-bottom--s\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-bottom, $spacing-s); } }
+.margin-bottom--s\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-bottom, $spacing-s); } }
+.margin-bottom--s\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-bottom, $spacing-s); } }
+.margin-bottom--s\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-bottom, $spacing-s); } }
 
-.margin-bottom--default { @include rem(margin-bottom, $spacing-m); }
-.margin-bottom--default\@mobile-xs { @include bp-min-width($bp-mobile-small) { @include rem(margin-bottom, $spacing-m); } }
-.margin-bottom--default\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-bottom, $spacing-m); } }
-.margin-bottom--default\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-bottom, $spacing-m); } }
-.margin-bottom--default\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-bottom, $spacing-m); } }
-.margin-bottom--default\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-bottom, $spacing-m); } }
-.margin-bottom--default\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-bottom, $spacing-m); } }
-.margin-bottom--default\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-bottom, $spacing-m); } }
+.margin-bottom--m { @include rem(margin-bottom, $spacing-m); }
+.margin-bottom--m\@mobile-small { @include bp-min-width($bp-mobile-small) { @include rem(margin-bottom, $spacing-m); } }
+.margin-bottom--m\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-bottom, $spacing-m); } }
+.margin-bottom--m\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-bottom, $spacing-m); } }
+.margin-bottom--m\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-bottom, $spacing-m); } }
+.margin-bottom--m\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-bottom, $spacing-m); } }
+.margin-bottom--m\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-bottom, $spacing-m); } }
+.margin-bottom--m\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-bottom, $spacing-m); } }
 
-.margin-bottom--large { @include rem(margin-bottom, $spacing-l); }
-.margin-bottom--large\@mobile-xs { @include bp-min-width($bp-mobile-small) { @include rem(margin-bottom, $spacing-l); } }
-.margin-bottom--large\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-bottom, $spacing-l); } }
-.margin-bottom--large\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-bottom, $spacing-l); } }
-.margin-bottom--large\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-bottom, $spacing-l); } }
-.margin-bottom--large\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-bottom, $spacing-l); } }
-.margin-bottom--large\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-bottom, $spacing-l); } }
-.margin-bottom--large\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-bottom, $spacing-l); } }
+.margin-bottom--l { @include rem(margin-bottom, $spacing-l); }
+.margin-bottom--l\@mobile-small { @include bp-min-width($bp-mobile-small) { @include rem(margin-bottom, $spacing-l); } }
+.margin-bottom--l\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-bottom, $spacing-l); } }
+.margin-bottom--l\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-bottom, $spacing-l); } }
+.margin-bottom--l\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-bottom, $spacing-l); } }
+.margin-bottom--l\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-bottom, $spacing-l); } }
+.margin-bottom--l\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-bottom, $spacing-l); } }
+.margin-bottom--l\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-bottom, $spacing-l); } }
 
-.margin-bottom--huge { @include rem(margin-bottom, $spacing-xl); }
-.margin-bottom--huge\@mobile-xs { @include bp-min-width($bp-mobile-small) { @include rem(margin-bottom, $spacing-xl); } }
-.margin-bottom--huge\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-bottom, $spacing-xl); } }
-.margin-bottom--huge\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-bottom, $spacing-xl); } }
-.margin-bottom--huge\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-bottom, $spacing-xl); } }
-.margin-bottom--huge\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-bottom, $spacing-xl); } }
-.margin-bottom--huge\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-bottom, $spacing-xl); } }
-.margin-bottom--huge\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-bottom, $spacing-xl); } }
+.margin-bottom--xl { @include rem(margin-bottom, $spacing-xl); }
+.margin-bottom--xl\@mobile-small { @include bp-min-width($bp-mobile-small) { @include rem(margin-bottom, $spacing-xl); } }
+.margin-bottom--xl\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-bottom, $spacing-xl); } }
+.margin-bottom--xl\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-bottom, $spacing-xl); } }
+.margin-bottom--xl\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-bottom, $spacing-xl); } }
+.margin-bottom--xl\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-bottom, $spacing-xl); } }
+.margin-bottom--xl\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-bottom, $spacing-xl); } }
+.margin-bottom--xl\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-bottom, $spacing-xl); } }
 
 .margin-bottom--none { margin-bottom: 0 !important; }
-.margin-bottom--none\@mobile-xs { @include bp-min-width($bp-mobile-small) { margin-bottom: 0 !important; } }
+.margin-bottom--none\@mobile-small { @include bp-min-width($bp-mobile-small) { margin-bottom: 0 !important; } }
 .margin-bottom--none\@mobile { @include bp-min-width($bp-mobile) { margin-bottom: 0 !important; } }
 .margin-bottom--none\@mobile-large { @include bp-min-width($bp-mobile-large) { margin-bottom: 0 !important; } }
 .margin-bottom--none\@tablet { @include bp-min-width($bp-tablet) { margin-bottom: 0 !important; } }
@@ -169,7 +169,7 @@
 .margin-bottom--none\@desktop-large { @include bp-min-width($bp-desktop-large) { margin-bottom: 0 !important; } }
 
 .margin-left--auto { margin-left: auto; }
-.margin-left--auto\@mobile-xs { @include bp-min-width($bp-mobile-small) { margin-left: auto; } }
+.margin-left--auto\@mobile-small { @include bp-min-width($bp-mobile-small) { margin-left: auto; } }
 .margin-left--auto\@mobile { @include bp-min-width($bp-mobile) { margin-left: auto; } }
 .margin-left--auto\@mobile-large { @include bp-min-width($bp-mobile-large) { margin-left: auto; } }
 .margin-left--auto\@tablet { @include bp-min-width($bp-tablet) { margin-left: auto; } }
@@ -178,7 +178,7 @@
 .margin-left--auto\@desktop-large { @include bp-min-width($bp-desktop-large) { margin-left: auto; } }
 
 .margin-left--xs { @include rem(margin-left, $spacing-xs); }
-.margin-left--xs\@mobile-xs { @include bp-min-width($bp-mobile-small) { @include rem(margin-left, $spacing-xs); } }
+.margin-left--xs\@mobile-small { @include bp-min-width($bp-mobile-small) { @include rem(margin-left, $spacing-xs); } }
 .margin-left--xs\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-left, $spacing-xs); } }
 .margin-left--xs\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-left, $spacing-xs); } }
 .margin-left--xs\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-left, $spacing-xs); } }
@@ -186,44 +186,44 @@
 .margin-left--xs\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-left, $spacing-xs); } }
 .margin-left--xs\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-left, $spacing-xs); } }
 
-.margin-left--xs { @include rem(margin-left, $spacing-xs); }
-.margin-left--xs\@mobile-xs { @include bp-min-width($bp-mobile-small) { @include rem(margin-left, $spacing-xs); } }
-.margin-left--xs\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-left, $spacing-xs); } }
-.margin-left--xs\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-left, $spacing-xs); } }
-.margin-left--xs\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-left, $spacing-xs); } }
-.margin-left--xs\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-left, $spacing-xs); } }
-.margin-left--xs\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-left, $spacing-xs); } }
-.margin-left--xs\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-left, $spacing-xs); } }
+.margin-left--s { @include rem(margin-left, $spacing-s); }
+.margin-left--s\@mobile-small { @include bp-min-width($bp-mobile-small) { @include rem(margin-left, $spacing-s); } }
+.margin-left--s\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-left, $spacing-s); } }
+.margin-left--s\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-left, $spacing-s); } }
+.margin-left--s\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-left, $spacing-s); } }
+.margin-left--s\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-left, $spacing-s); } }
+.margin-left--s\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-left, $spacing-s); } }
+.margin-left--s\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-left, $spacing-s); } }
 
-.margin-left--default { @include rem(margin-left, $spacing-m); }
-.margin-left--default\@mobile-xs { @include bp-min-width($bp-mobile-small) { @include rem(margin-left, $spacing-m); } }
-.margin-left--default\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-left, $spacing-m); } }
-.margin-left--default\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-left, $spacing-m); } }
-.margin-left--default\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-left, $spacing-m); } }
-.margin-left--default\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-left, $spacing-m); } }
-.margin-left--default\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-left, $spacing-m); } }
-.margin-left--default\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-left, $spacing-m); } }
+.margin-left--m { @include rem(margin-left, $spacing-m); }
+.margin-left--m\@mobile-small { @include bp-min-width($bp-mobile-small) { @include rem(margin-left, $spacing-m); } }
+.margin-left--m\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-left, $spacing-m); } }
+.margin-left--m\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-left, $spacing-m); } }
+.margin-left--m\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-left, $spacing-m); } }
+.margin-left--m\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-left, $spacing-m); } }
+.margin-left--m\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-left, $spacing-m); } }
+.margin-left--m\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-left, $spacing-m); } }
 
-.margin-left--large { @include rem(margin-left, $spacing-l); }
-.margin-left--large\@mobile-xs { @include bp-min-width($bp-mobile-small) { @include rem(margin-left, $spacing-l); } }
-.margin-left--large\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-left, $spacing-l); } }
-.margin-left--large\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-left, $spacing-l); } }
-.margin-left--large\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-left, $spacing-l); } }
-.margin-left--large\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-left, $spacing-l); } }
-.margin-left--large\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-left, $spacing-l); } }
-.margin-left--large\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-left, $spacing-l); } }
+.margin-left--l { @include rem(margin-left, $spacing-l); }
+.margin-left--l\@mobile-small { @include bp-min-width($bp-mobile-small) { @include rem(margin-left, $spacing-l); } }
+.margin-left--l\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-left, $spacing-l); } }
+.margin-left--l\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-left, $spacing-l); } }
+.margin-left--l\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-left, $spacing-l); } }
+.margin-left--l\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-left, $spacing-l); } }
+.margin-left--l\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-left, $spacing-l); } }
+.margin-left--l\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-left, $spacing-l); } }
 
-.margin-left--huge { @include rem(margin-left, $spacing-xl); }
-.margin-left--huge\@mobile-xs { @include bp-min-width($bp-mobile-small) { @include rem(margin-left, $spacing-xl); } }
-.margin-left--huge\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-left, $spacing-xl); } }
-.margin-left--huge\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-left, $spacing-xl); } }
-.margin-left--huge\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-left, $spacing-xl); } }
-.margin-left--huge\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-left, $spacing-xl); } }
-.margin-left--huge\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-left, $spacing-xl); } }
-.margin-left--huge\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-left, $spacing-xl); } }
+.margin-left--xl { @include rem(margin-left, $spacing-xl); }
+.margin-left--xl\@mobile-small { @include bp-min-width($bp-mobile-small) { @include rem(margin-left, $spacing-xl); } }
+.margin-left--xl\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-left, $spacing-xl); } }
+.margin-left--xl\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-left, $spacing-xl); } }
+.margin-left--xl\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-left, $spacing-xl); } }
+.margin-left--xl\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-left, $spacing-xl); } }
+.margin-left--xl\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-left, $spacing-xl); } }
+.margin-left--xl\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-left, $spacing-xl); } }
 
 .margin-right--none { margin-right: 0 !important; }
-.margin-right--none\@mobile-xs { @include bp-min-width($bp-mobile-small) { margin-right: 0 !important; } }
+.margin-right--none\@mobile-small { @include bp-min-width($bp-mobile-small) { margin-right: 0 !important; } }
 .margin-right--none\@mobile { @include bp-min-width($bp-mobile) { margin-right: 0 !important; } }
 .margin-right--none\@mobile-large { @include bp-min-width($bp-mobile-large) { margin-right: 0 !important; } }
 .margin-right--none\@tablet { @include bp-min-width($bp-tablet) { margin-right: 0 !important; } }
@@ -232,7 +232,7 @@
 .margin-right--none\@desktop-large { @include bp-min-width($bp-desktop-large) { margin-right: 0 !important; } }
 
 .margin-left--auto { margin-left: auto; }
-.margin-left--auto\@mobile-xs { @include bp-min-width($bp-mobile-small) { margin-left: auto; } }
+.margin-left--auto\@mobile-small { @include bp-min-width($bp-mobile-small) { margin-left: auto; } }
 .margin-left--auto\@mobile { @include bp-min-width($bp-mobile) { margin-left: auto; } }
 .margin-left--auto\@mobile-large { @include bp-min-width($bp-mobile-large) { margin-left: auto; } }
 .margin-left--auto\@tablet { @include bp-min-width($bp-tablet) { margin-left: auto; } }
@@ -241,7 +241,7 @@
 .margin-left--auto\@desktop-large { @include bp-min-width($bp-desktop-large) { margin-left: auto; } }
 
 .margin-right--xs { @include rem(margin-right, $spacing-xs); }
-.margin-right--xs\@mobile-xs { @include bp-min-width($bp-mobile-small) { @include rem(margin-right, $spacing-xs); } }
+.margin-right--xs\@mobile-small { @include bp-min-width($bp-mobile-small) { @include rem(margin-right, $spacing-xs); } }
 .margin-right--xs\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-right, $spacing-xs); } }
 .margin-right--xs\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-right, $spacing-xs); } }
 .margin-right--xs\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-right, $spacing-xs); } }
@@ -249,44 +249,44 @@
 .margin-right--xs\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-right, $spacing-xs); } }
 .margin-right--xs\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-right, $spacing-xs); } }
 
-.margin-right--xs { @include rem(margin-right, $spacing-xs); }
-.margin-right--xs\@mobile-xs { @include bp-min-width($bp-mobile-small) { @include rem(margin-right, $spacing-xs); } }
-.margin-right--xs\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-right, $spacing-xs); } }
-.margin-right--xs\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-right, $spacing-xs); } }
-.margin-right--xs\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-right, $spacing-xs); } }
-.margin-right--xs\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-right, $spacing-xs); } }
-.margin-right--xs\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-right, $spacing-xs); } }
-.margin-right--xs\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-right, $spacing-xs); } }
+.margin-right--s { @include rem(margin-right, $spacing-s); }
+.margin-right--s\@mobile-small { @include bp-min-width($bp-mobile-small) { @include rem(margin-right, $spacing-s); } }
+.margin-right--s\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-right, $spacing-s); } }
+.margin-right--s\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-right, $spacing-s); } }
+.margin-right--s\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-right, $spacing-s); } }
+.margin-right--s\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-right, $spacing-s); } }
+.margin-right--s\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-right, $spacing-s); } }
+.margin-right--s\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-right, $spacing-s); } }
 
-.margin-right--default { @include rem(margin-right, $spacing-m); }
-.margin-right--default\@mobile-xs { @include bp-min-width($bp-mobile-small) { @include rem(margin-right, $spacing-m); } }
-.margin-right--default\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-right, $spacing-m); } }
-.margin-right--default\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-right, $spacing-m); } }
-.margin-right--default\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-right, $spacing-m); } }
-.margin-right--default\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-right, $spacing-m); } }
-.margin-right--default\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-right, $spacing-m); } }
-.margin-right--default\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-right, $spacing-m); } }
+.margin-right--m { @include rem(margin-right, $spacing-m); }
+.margin-right--m\@mobile-small { @include bp-min-width($bp-mobile-small) { @include rem(margin-right, $spacing-m); } }
+.margin-right--m\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-right, $spacing-m); } }
+.margin-right--m\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-right, $spacing-m); } }
+.margin-right--m\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-right, $spacing-m); } }
+.margin-right--m\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-right, $spacing-m); } }
+.margin-right--m\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-right, $spacing-m); } }
+.margin-right--m\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-right, $spacing-m); } }
 
-.margin-right--large { @include rem(margin-right, $spacing-l); }
-.margin-right--large\@mobile-xs { @include bp-min-width($bp-mobile-small) { @include rem(margin-right, $spacing-l); } }
-.margin-right--large\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-right, $spacing-l); } }
-.margin-right--large\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-right, $spacing-l); } }
-.margin-right--large\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-right, $spacing-l); } }
-.margin-right--large\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-right, $spacing-l); } }
-.margin-right--large\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-right, $spacing-l); } }
-.margin-right--large\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-right, $spacing-l); } }
+.margin-right--l { @include rem(margin-right, $spacing-l); }
+.margin-right--l\@mobile-small { @include bp-min-width($bp-mobile-small) { @include rem(margin-right, $spacing-l); } }
+.margin-right--l\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-right, $spacing-l); } }
+.margin-right--l\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-right, $spacing-l); } }
+.margin-right--l\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-right, $spacing-l); } }
+.margin-right--l\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-right, $spacing-l); } }
+.margin-right--l\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-right, $spacing-l); } }
+.margin-right--l\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-right, $spacing-l); } }
 
-.margin-right--huge { @include rem(margin-right, $spacing-xl); }
-.margin-right--huge\@mobile-xs { @include bp-min-width($bp-mobile-small) { @include rem(margin-right, $spacing-xl); } }
-.margin-right--huge\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-right, $spacing-xl); } }
-.margin-right--huge\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-right, $spacing-xl); } }
-.margin-right--huge\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-right, $spacing-xl); } }
-.margin-right--huge\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-right, $spacing-xl); } }
-.margin-right--huge\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-right, $spacing-xl); } }
-.margin-right--huge\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-right, $spacing-xl); } }
+.margin-right--xl { @include rem(margin-right, $spacing-xl); }
+.margin-right--xl\@mobile-small { @include bp-min-width($bp-mobile-small) { @include rem(margin-right, $spacing-xl); } }
+.margin-right--xl\@mobile { @include bp-min-width($bp-mobile) { @include rem(margin-right, $spacing-xl); } }
+.margin-right--xl\@mobile-large { @include bp-min-width($bp-mobile-large) { @include rem(margin-right, $spacing-xl); } }
+.margin-right--xl\@tablet { @include bp-min-width($bp-tablet) { @include rem(margin-right, $spacing-xl); } }
+.margin-right--xl\@desktop { @include bp-min-width($bp-desktop) { @include rem(margin-right, $spacing-xl); } }
+.margin-right--xl\@desktop-medium { @include bp-min-width($bp-desktop-medium) { @include rem(margin-right, $spacing-xl); } }
+.margin-right--xl\@desktop-large { @include bp-min-width($bp-desktop-large) { @include rem(margin-right, $spacing-xl); } }
 
 .margin-right--none { margin-right: 0 !important; }
-.margin-right--none\@mobile-xs { @include bp-min-width($bp-mobile-small) { margin-right: 0 !important; } }
+.margin-right--none\@mobile-small { @include bp-min-width($bp-mobile-small) { margin-right: 0 !important; } }
 .margin-right--none\@mobile { @include bp-min-width($bp-mobile) { margin-right: 0 !important; } }
 .margin-right--none\@mobile-large { @include bp-min-width($bp-mobile-large) { margin-right: 0 !important; } }
 .margin-right--none\@tablet { @include bp-min-width($bp-tablet) { margin-right: 0 !important; } }
