@@ -13,8 +13,8 @@ header {
         display: flex;
         align-items: center;
 
-        @include rem(margin-left, $spacing-l);
-        @include rem(margin-right, $spacing-l);
+        @include rem(padding-left, $spacing-l);
+        @include rem(padding-right, $spacing-l);
 
         @include bp-min-width($bp-desktop-small) { 
             margin-left: auto;
