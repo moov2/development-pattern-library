@@ -1,0 +1,145 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $FOOTER
+ * -----------------------------------------------------------------------------
+ */
+ 
+footer,
+.footer {
+    @include rem(padding-bottom, $spacing-xl);
+    @include rem(padding-top, $spacing-xl);
+    
+    position: relative;
+    background-color: $color-black;
+    color: $color-white;
+    font-size: $font-size-small;
+
+    a {
+        color: $color-white;
+        text-decoration: none;
+    }
+}
+ 
+    .footer__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include rem(padding-left, $spacing-l);
+        @include rem(padding-right, $spacing-l);
+
+        @include bp-min-width($bp-tablet) {
+            align-items: flex-start;
+            flex-direction: row;
+            flex-wrap: wrap;
+        } 
+
+        @include bp-min-width($bp-desktop) { 
+            margin-left: auto;
+            margin-right: auto;
+            max-width: $width-footer-content;
+        }
+    }
+
+        .footer__logo-marque {
+            @include rem(margin-bottom, $spacing-xl);
+            width: 100px;
+
+            fill: $color-white;
+        }
+
+        .footer__nav {
+            @include rem(margin-bottom, $spacing-xl); 
+
+            @include bp-min-width($bp-tablet) {
+                @include rem(margin-left, $spacing-xxxl);
+                margin-right: auto;
+            }
+
+            @include bp-min-width($bp-desktop-small) {
+                display: inline-block;
+                margin-bottom: 0;
+                margin-right: auto;
+            }
+            
+            > ul {
+                display: inline-block;
+                vertical-align: top;
+                margin-bottom: 0;
+                width: 49%;
+
+                @include bp-min-width($bp-tablet) {
+                    @include rem(width, 20rem);
+                }
+
+                li {
+                    @include rem(margin-bottom, $spacing-m);
+
+                    &:last-child { margin-bottom: 0; }
+                }
+
+                .list--social-menu {
+                    text-align: left;
+
+                    > a {
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+
+                    .icon--twitter-white {
+                        margin-left: $spacing-m;
+                    }
+                }
+            }
+
+            ul {
+                ul {
+                    margin-bottom: 0;
+                    @include rem(margin-top, $spacing-m); 
+
+                    @include bp-min-width($bp-tablet) {
+                        @include rem(padding-left, $spacing-l); 
+                    }
+                }
+            }
+        }
+
+        .footer__social {
+            @include list-reset();
+            @include list-horizontal();
+
+            width: auto;
+
+            line-height: $line-height-tight;
+
+            @include bp-min-width($bp-tablet) {
+                display: inline-block;
+            }
+
+            li {
+                @include rem(margin-right, $spacing-m);
+            }
+
+            a {
+                display: block;
+            }
+        }
+ 
+        .footer__privacy {
+            margin-left: 0;
+            margin-right: 0;
+            max-width: none;
+            
+            line-height: $line-height-loose;
+
+            @include bp-min-width($bp-desktop-small) {
+                display: inline-block;
+                @include rem(margin-left, $spacing-xl);
+                vertical-align: top;
+                width: auto;
+            }
+            
+            a {
+                white-space: nowrap;
+            }
+        }
