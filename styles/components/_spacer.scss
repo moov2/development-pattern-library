@@ -17,3 +17,11 @@
     &--xxl { height: $spacing-xxl; }
     &--xxxl { height: $spacing-xxxl; }
 }
+
+.spacer-examples {
+    .spacer {
+        margin-bottom: $spacing-l;
+
+        background-color: $color-grey-light;
+    }
+}
