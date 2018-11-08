@@ -18,10 +18,9 @@ title: Development Pattern Library
 
 <ul>
     <li><a href="/components/detail/embed">Embed</a></li>
-    <li><a href="/components/detail/hero-default">Hero</a></li>
     <li><a href="/components/detail/image">Image</a></li>
     <li><a href="/components/detail/list-default">List</a></li>
-    <li><a href="/components/detail/summary-default">Summary</a></li>
+    <li><a href="/components/detail/spacer">Spacer</a></li>
 </ul>
 
 <h2>Brand information</h2>
