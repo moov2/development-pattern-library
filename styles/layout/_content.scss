@@ -82,7 +82,7 @@
         @include bp-min-width($bp-desktop-large) {
             top: $spacing-xl * 3;
             left: $spacing-xl * 3;
-            width: 72rem;
+            width: 80rem;
         }
     }
 
@@ -196,7 +196,7 @@
         @include bp-min-width($bp-desktop-large) {
             top: $spacing-xl * 3;
             right: $spacing-xl * 3;
-            width: 72rem;
+            width: 80rem;
         }
     }
 
