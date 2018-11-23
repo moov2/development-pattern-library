@@ -7,7 +7,7 @@ import Rellax from 'rellax';
 const parallax = function ($el) {
 
   // Handle single link
-  var rellax = new Rellax('.rellax', {
+  var rellax = new Rellax($el, {
     speed: -2,
     center: false,
     wrapper: null,
