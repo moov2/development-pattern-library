@@ -67,6 +67,8 @@ typings/
 
 # End of https://www.gitignore.io/api/node,sass
 
+.DS_Store
+
 build
 dist
 public/css

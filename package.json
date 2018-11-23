@@ -3,9 +3,19 @@
   "version": "0.1.0",
   "dependencies": {
     "@frctl/fractal": "^1.1.7",
-    "@frctl/mandelbrot": "^1.2.0"
+    "@frctl/mandelbrot": "^1.2.0",
+    "browserify": "^14.4.0",
+    "cross-env": "^5.2.0",
+    "lg-video.js": "^1.0.0",
+    "lightgallery.js": "^1.0.2",
+    "onchange": "^5.1.1",
+    "parallelshell": "^3.0.2",
+    "rellax": "^1.7.1"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^8.0.0",
     "clean-css-cli": "^4.1.10",
     "modern-normalize": "^0.4.0",
     "node-sass": "^4.5.3",
@@ -15,11 +25,25 @@
     "main": "fractal.js"
   },
   "scripts": {
-    "build-css": "node-sass --include-path scss styles/styles.scss public/css/styles.css",
-    "clean-css": "cleancss -o public/css/styles.min.css public/css/styles.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css && npm run clean-css\"",
-    "develop": "npm install && start fractal.cmd start --sync && start npm run watch-css",
+    "css:build": "node-sass --include-path scss ./assets/styles/styles.scss ./public/css/styles.css",
+    "css:clean": "cleancss -o ./public/css/styles.min.css ./public/css/styles.css",
+    "css": "npm run css:build && npm run css:clean",
+    "css:watch": "onchange 'styles/*.*' -v -- npm run css",
+    "images": "xcopy .\\assets\\images .\\public\\pattern-library\\images /s/e/h/i/y/k/f/c",
+    "images:unix": "cp -R ./assets/images/ ./public/pattern-library/images/",
+    "images:watch": "onchange './assets/images/*.*' -v -- npm run images",
+    "fonts": "xcopy .\\assets\\fonts .\\public\\fonts /s/e/h/i/y/k/f/c",
+    "fonts:unix": "cp -R ./assets/fonts/ ./public/fonts/",
+    "fonts:watch": "onchange 'fonts/*.*' -v -- npm run fonts",
+    "js:build": "cross-env NODE_PATH=./node_modules/lightgallery.js/src/js:./node_modules/lg-video.js/dist browserify ./assets/scripts/gallery.js ./assets/scripts/parallax.js  > public/scripts/bundle.js -t [babelify --presets [es2015] ]",
+    "js:unix": "npm run js:build && cp -R ./assets/scripts/plugins/ ./public/scripts/",
+    "js": "npm run js:build && xcopy .\\assets\\scripts\\plugins .\\public\\scripts /s/e/h/i/y/k/f/c",
+    "js:watch": "onchange './assets/scripts/*.*' -v -- npm run js",
+    "develop": "npm install && parallelshell \"npm run css:build\" \"npm run images:watch\" \"npm run fonts:watch\" \"npm run js:watch\" \"start fractal.cmd start --sync\"",
+    "develop:unix": "npm install && parallelshell \"npm run css:build\" \"npm run images:watch\" \"npm run fonts:watch\" \"npm run js:watch\" \"fractal start --sync\"",
     "build": "fractal.cmd build",
-    "dist": "npm install && npm run build-css && npm run build"
+    "build:unix": "fractal build",
+    "dist": "npm install && npm run css:build && npm run build",
+    "dist:unix": "npm install && npm run css:build && npm run images && npm run fonts && npm run js && npm run build:unix"
   }
 }
